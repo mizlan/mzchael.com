@@ -25,3 +25,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+a {
+   @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-800
+}
+
+h1 {
+  @apply text-5xl font-black;
+}
+
+nav {
+  @apply px-10 lg:px-32 pb-10;
+}
+
+nav > ul {
+  @apply flex flex-row justify-between lg:justify-center lg:gap-16;
+}
