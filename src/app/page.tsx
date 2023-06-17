@@ -3,7 +3,7 @@ import RecentTrack from './RecentTrack'
 import Image from 'next/image'
 import sig from 'public/sig.png'
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="flex flex-col justify-between px-10 lg:px-32 pt-[5vh] lg:pt-[14vh] h-full flex-grow">
       <div className="flex flex-col gap-4">
@@ -28,3 +28,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home
