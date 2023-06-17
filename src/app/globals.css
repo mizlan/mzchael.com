@@ -21,15 +21,11 @@ body {
 }
 
 a {
-   @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-800
-}
-
-h1 {
-  @apply text-5xl font-black;
+   @apply underline text-wanBlue-800 hover:bg-rosePearl-700/20 visited:text-lavenderHaze-800
 }
 
 nav {
-  @apply px-10 lg:px-32 pb-10;
+  @apply px-10 lg:px-32 pb-10 pt-5;
 }
 
 nav > ul {
