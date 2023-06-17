@@ -1,5 +1,7 @@
 import Balancer from 'react-wrap-balancer'
 import RecentTrack from './RecentTrack'
+import Image from 'next/image'
+import sig from 'public/sig.png'
 
 export default function Home() {
   return (
@@ -11,6 +13,12 @@ export default function Home() {
         Oh, and I have a board game <a href="https://boardgamegeek.com/collection/user/BallOfSalt">collection</a>.
       </Balancer>
       <RecentTrack />
+        <Image
+          src={sig}
+          alt="Michael's signature"
+          className="sig"
+          width="160"
+        />
     </main>
   )
 }
