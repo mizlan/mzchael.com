@@ -11,7 +11,9 @@ const ThisSite = () => {
           I have written using either of those technologies. It also uses React Query
           and React Wrap Balancer for certain niceties. The colors were generated using
           {' '}
-          <a href="https://huewind.jordantwells.com">HueWind</a>.
+          <a href="https://huewind.jordantwells.com">HueWind</a>. The source code is available
+          {' '}
+          <a href="https://github.com/mizlan/mzchael.com/">here</a>.
         </Balancer>
       </section>
       <section className="flex flex-col gap-3">
