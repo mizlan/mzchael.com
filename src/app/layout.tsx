@@ -24,7 +24,6 @@ export default function RootLayout({
             <li><Link href="/">home</Link></li>
             <li><a href="https://github.com/mizlan">github</a></li>
             <li><a href="https://www.youtube.com/c/mzzzchael">youtube</a></li>
-            <li><a href="https://www.instagram.com/mzzzchael/">portfolio</a></li>
             <li><Link href="/this-site">this site</Link></li>
             <li><a href="https://blog.mzchael.com">blog</a> </li>
           </ul>
