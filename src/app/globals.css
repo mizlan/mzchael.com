@@ -2,28 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  @apply text-theme-dark bg-theme-light;
+  background-image: url('/topography.svg');
+}
+
+.sig {
+  filter: invert(27%) sepia(4%) saturate(1907%) hue-rotate(317deg) brightness(91%) contrast(76%);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  body {
+    @apply text-theme-light bg-theme-dark;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .sig {
+    filter: invert(95%) sepia(13%) saturate(552%) hue-rotate(304deg) brightness(104%) contrast(90%);
+  }
 }
 
 a {
