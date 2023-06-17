@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  @apply bg-wanBlue-800/30
+}
+
 body {
   @apply text-theme-dark bg-theme-light;
   background-image: url('/topography.svg');
