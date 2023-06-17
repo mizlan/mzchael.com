@@ -1,8 +1,8 @@
 'use client'
 
 import { useQuery } from '@tanstack/react-query'
-import waveform from './waveform.svg'
-import airpods from './airpods.svg'
+import waveform from 'public/waveform.svg'
+import airpods from 'public/airpods.svg'
 import Image from 'next/image'
 import { z } from 'zod'
 import { Balancer } from 'react-wrap-balancer'
