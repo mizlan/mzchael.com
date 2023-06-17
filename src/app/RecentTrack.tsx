@@ -47,7 +47,7 @@ const RecentTrack = () => {
   }
 
   return (
-    <div className="flex space-x-2 text-gray-400">
+    <div className="flex space-x-2 text-rosePearl-700">
       <div className="flex flex-col justify-center">
         {data.device === 'Michael\'s AirPods Pro' ?
           <Image
@@ -63,8 +63,7 @@ const RecentTrack = () => {
       </div>
 
       <Balancer>
-        Michael is listening to
-        {' '}
+        {data.isPlaying ? "Michael is currently listening to " : "Michael most recently listened to "}
         <a href={data.songUrl}>{data.title}</a>
         {' '}
         by
