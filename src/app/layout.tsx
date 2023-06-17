@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Providers from './Providers'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,12 +21,12 @@ export default function RootLayout({
       <body className={"${inter.className} min-h-screen flex flex-col"}>
         <nav>
           <ul>
+            <li><Link href="/">home</Link></li>
             <li><a href="https://github.com/mizlan">github</a></li>
             <li><a href="https://www.youtube.com/c/mzzzchael">youtube</a></li>
             <li><a href="https://www.instagram.com/mzzzchael/">portfolio</a></li>
-            <li><a href="https://www.instagram.com/mzzzchael/">this site</a></li>
+            <li><Link href="/this-site">this site</Link></li>
             <li><a href="https://blog.mzchael.com">blog</a> </li>
-            {/* <li><a href="https://www.instagram.com/mzzzchael/">instagram</a></li> */}
           </ul>
         </nav>
         <Providers>
