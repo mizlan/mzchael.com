@@ -1,6 +1,3 @@
-'use client'
-
-import { useQuery } from '@tanstack/react-query'
 import waveform from 'public/waveform.svg'
 import airpods from 'public/airpods.svg'
 import Image from 'next/image'
@@ -31,21 +28,14 @@ const postProcess = (data: z.infer<typeof RecentTrackResponse>) => {
 
 const query = async () => {
   console.log('[debug] re-fetching recent track')
-  const resp = await fetch('https://recenttrack.vercel.app/api/handler')
+  const resp = await fetch('https://recenttrack.vercel.app/api/handler', { cache: 'no-store' })
   const json = await resp.json()
   const data = RecentTrackResponse.parse(json)
   return postProcess(data)
 }
 
-const RecentTrack = () => {
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ['recent-track'],
-    queryFn: query
-  })
-
-  if (isLoading || isError) {
-    return (null)
-  }
+const RecentTrack = async () => {
+  const data = await query();
 
   return (
     <div className="flex space-x-2 text-rosePearl-700">

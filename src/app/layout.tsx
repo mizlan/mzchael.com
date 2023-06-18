@@ -1,4 +1,3 @@
-import Providers from './Providers'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
@@ -27,9 +26,7 @@ export default function RootLayout({
             <li><a href="https://blog.mzchael.com">blog</a> </li>
           </ul>
         </nav>
-        <Providers>
-          {children}
-        </Providers>
+        {children}
       </body>
     </html>
   )
