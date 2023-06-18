@@ -25,7 +25,7 @@ body {
 }
 
 a {
-   @apply underline text-wanBlue-800 hover:bg-rosePearl-700/20 visited:text-lavenderHaze-800
+   @apply underline text-wanBlue-700 visited:text-lavenderHaze-700 dark:text-wanBlue-500 dark:visited:text-lavenderHaze-400;
 }
 
 nav {
