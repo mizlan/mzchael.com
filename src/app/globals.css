@@ -25,13 +25,13 @@ body {
 }
 
 a {
-   @apply underline text-wanBlue-700 visited:text-lavenderHaze-700 dark:text-wanBlue-500 dark:visited:text-lavenderHaze-400;
+   @apply underline text-wanBlue-700 visited:text-lavenderHaze-600 dark:text-wanBlue-500 dark:visited:text-lavenderHaze-400;
 }
 
 nav {
-  @apply px-10 lg:px-32 pb-10 pt-5;
+  @apply px-10 md:px-32 pb-10 pt-5;
 }
 
 nav > ul {
-  @apply flex flex-row justify-between lg:justify-center lg:gap-16;
+  @apply flex flex-row justify-between md:justify-center md:gap-16;
 }
