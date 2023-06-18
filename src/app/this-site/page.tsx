@@ -7,9 +7,8 @@ const ThisSite = () => {
       <section className="flex flex-col gap-3">
         <h1 className="text-3xl font-extrabold">This Site</h1>
         <Balancer>
-          This site was made with Next.js and Tailwind. It is also the first site
-          I have written using either of those technologies. It also uses React Query
-          and React Wrap Balancer for certain niceties. The colors were generated using
+          This site was made with Next.js and Tailwind and is the first site
+          I have written using either of those technologies. The colors were generated using
           {' '}
           <a href="https://huewind.jordantwells.com">HueWind</a>. The source code is available
           {' '}

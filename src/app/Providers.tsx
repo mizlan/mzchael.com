@@ -1,17 +1,15 @@
-'use client'
-
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-
-const queryClient = new QueryClient()
+import { Provider as BalancerProvider } from 'react-wrap-balancer'
 
 interface Props {
   children: React.ReactNode;
 }
 
-const Providers = ({ children }: Props) => (
-  <QueryClientProvider client={queryClient}>
-    {children}
-  </QueryClientProvider>
-)
+const Providers = ({ children }: Props) => {
+  return (
+    <BalancerProvider>
+      {children}
+    </BalancerProvider>
+  )
+}
 
 export default Providers
