@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Providers from './Providers'
 import './globals.css'
 import { Inter } from 'next/font/google'
