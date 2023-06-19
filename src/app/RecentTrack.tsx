@@ -28,7 +28,7 @@ const postProcess = (data: z.infer<typeof RecentTrackResponse>) => {
 
 const query = async () => {
   console.log('[debug] re-fetching recent track')
-  const resp = await fetch('https://recenttrack.vercel.app/api/handler', { next: { revalidate: 5 } })
+  const resp = await fetch('https://recenttrack.vercel.app/api/handler', { cache: 'no-store' })
   const json = await resp.json()
   const data = RecentTrackResponse.parse(json)
   return postProcess(data)
