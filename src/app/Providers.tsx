@@ -1,4 +1,7 @@
+'use client'
+
 import { Provider as BalancerProvider } from 'react-wrap-balancer'
+import { ThemeProvider } from 'next-themes'
 
 interface Props {
   children: React.ReactNode;
@@ -6,9 +9,11 @@ interface Props {
 
 const Providers = ({ children }: Props) => {
   return (
-    <BalancerProvider>
-      {children}
-    </BalancerProvider>
+    <ThemeProvider enableSystem={false} attribute="class">
+      <BalancerProvider>
+        {children}
+      </BalancerProvider>
+    </ThemeProvider>
   )
 }
 
