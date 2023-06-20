@@ -3,7 +3,7 @@ import '../globals.css'
 
 const ThisSite = () => {
   return (
-    <main className="flex flex-col gap-4 px-10 md:px-[15vw] lg:px-[30vw]">
+    <main className="flex flex-col gap-4 px-10 md:px-[15vw] lg:px-[30vw] mb-10">
       <section className="flex flex-col gap-3">
         <h1 className="text-3xl font-extrabold">This Site</h1>
         <Balancer>
