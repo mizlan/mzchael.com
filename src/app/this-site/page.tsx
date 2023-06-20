@@ -25,7 +25,7 @@ const ThisSite = () => {
         </Balancer>
         <Balancer>
           There&apos;s a problem though: because the Spotify API response has an{' '}
-          <code>isPlaying</code> flag, it might seem as though the endpoint
+          <code className="bg-rosePearl-700/20 px-1 py-0.5 rounded-md text-sm">isPlaying</code> flag, it might seem as though the endpoint
           effectively returns the <i>most recently played</i> song. This, however,
           is not the case&#8212;the endpoint returns no data after a certain time has
           passed since Spotify was last playing. To remedy this, I utilize the <a href="https://www.last.fm/api">last.fm API</a>
