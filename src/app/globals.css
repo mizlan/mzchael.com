@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::selection {
-  @apply bg-wanBlue-800/30
+  @apply bg-wanBlue-800/30;
 }
 
 body {
@@ -11,27 +11,39 @@ body {
   background-image: url('/topography.svg');
 }
 
-.sig {
-  filter: invert(27%) sepia(4%) saturate(1907%) hue-rotate(317deg) brightness(91%) contrast(76%);
+.dark body {
+  @apply text-theme-light bg-theme-dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    @apply text-theme-light bg-theme-dark;
-  }
-  .sig {
+.sig {
+  @apply sig-light;
+}
+
+.dark .sig {
+  @apply sig-dark;
+}
+
+@layer components {
+  .sig-dark {
     filter: invert(95%) sepia(13%) saturate(552%) hue-rotate(304deg) brightness(104%) contrast(90%);
   }
+  .sig-light {
+    filter: invert(27%) sepia(4%) saturate(1907%) hue-rotate(317deg) brightness(91%) contrast(76%);
+  }
 }
 
-a {
-   @apply underline text-wanBlue-700 visited:text-lavenderHaze-600 dark:text-wanBlue-500 dark:visited:text-lavenderHaze-400;
-}
+/* a { */
+/*    @apply underline text-wanBlue-700; */
+/* } */
+
+/* .dark a { */
+/*   @apply text-wanBlue-500; */
+/* } */
 
 nav {
   @apply px-10 md:px-32 pb-10 pt-5;
 }
 
 nav > ul {
-  @apply flex flex-row justify-between md:justify-center md:gap-16;
+  @apply flex flex-row justify-between md:justify-end md:gap-8;
 }

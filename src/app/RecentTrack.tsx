@@ -44,7 +44,6 @@ const RecentTrack = async () => {
           <Image
             src={airpods}
             alt="airpods"
-            className='h-max'
           />
           :
           <Image
