@@ -1,8 +1,11 @@
+'use client'
+
 import waveform from 'public/waveform.svg'
 import airpods from 'public/airpods.svg'
 import Image from 'next/image'
 import { z } from 'zod'
 import { Balancer } from 'react-wrap-balancer'
+import useSWR from 'swr'
 
 const RecentTrackResponse = z.object({
   album: z.string(),
@@ -28,14 +31,18 @@ const postProcess = (data: z.infer<typeof RecentTrackResponse>) => {
 
 const query = async () => {
   console.log('[debug] re-fetching recent track')
-  const resp = await fetch('https://recenttrack.vercel.app/api/handler', { cache: 'no-store' })
+  const resp = await fetch('https://recenttrack.vercel.app/api/handler')
   const json = await resp.json()
   const data = RecentTrackResponse.parse(json)
   return postProcess(data)
 }
 
-const RecentTrack = async () => {
-  const data = await query();
+const RecentTrack = () => {
+  const { data } = useSWR('track', query, {
+    keepPreviousData: true,
+  })
+
+  if (!data) return (null)
 
   return (
     <div className="flex space-x-2 text-rosePearl-700">
@@ -54,7 +61,7 @@ const RecentTrack = async () => {
 
       <Balancer>
         {data.isPlaying ? "Michael is currently listening to " : "Michael most recently listened to "}
-        <a className="text-wanBlue-600 visited:text-lavenderHaze-400" href={data.songUrl}>{data.title}</a>
+        <a className="underline text-wanBlue-600" href={data.songUrl}>{data.title}</a>
         {' '}
         by
         {' '}
