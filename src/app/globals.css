@@ -45,5 +45,5 @@ nav {
 }
 
 nav > ul {
-  @apply flex flex-row justify-between md:justify-end md:gap-8;
+  @apply flex flex-row justify-between md:justify-end md:gap-7;
 }
