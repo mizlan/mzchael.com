@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import arrow from "public/arrow.svg"
 import squareArrow from "public/square-arrow.svg"
 import { useSelectedLayoutSegment } from 'next/navigation'
 
@@ -21,7 +22,7 @@ const NavLink = ({
     return (
       <div className="flex flex-row items-center gap-1">
         <Link target="_blank" className='text-rosePearl-700 dark:text-rosePearl-600' href={href}>{children}</Link>
-        <Image src={squareArrow} alt="" className="w-2 h-2 -translate-y-1" />
+        <Image src={arrow} alt="" className="w-1.5 h-1.5 -translate-y-1" />
       </div >
     )
   }
