@@ -12,7 +12,7 @@ const Home = () => {
           I&apos;m a second-year studying computer science at UCLA, and
           I love open source, functional programming, and the Neovim ecosystem.
           Some of my hobbies include analytic philosophy, a&nbsp;cappella, electric guitar, and crosswords.
-          Oh, and I have a <a href="https://boardgamegeek.com/collection/user/BallOfSalt">board game collection</a>.
+          Oh, and I have a <a className="underline visited:text-lavenderHaze-600 dark:visited:text-lavenderHaze-400" href="https://boardgamegeek.com/collection/user/BallOfSalt">board game collection</a>.
         </Balancer>
         <RecentTrack />
       </div>
