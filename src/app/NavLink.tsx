@@ -12,6 +12,11 @@ const NavLink = ({
   href: string
   children: React.ReactNode
 }) => {
+
+  const segment = useSelectedLayoutSegment()
+  const slug = href.slice(1)
+  const isActive = slug === "" ? segment === null : slug === segment
+
   if (!href.startsWith("/")) {
     return (
       <div className="flex flex-row items-center gap-1">
@@ -20,13 +25,10 @@ const NavLink = ({
       </div >
     )
   }
-const slug = href.slice(1)
-const segment = useSelectedLayoutSegment()
-const isActive = slug === "" ? segment === null : slug === segment
-console.log(slug, segment)
-return (
-  <Link className={isActive ? `underline text-rosePearl-900 dark:text-rosePearl-300` : `text-rosePearl-700 dark:text-rosePearl-600`} href={href}>{children}</Link>
-)
+
+  return (
+    <Link className={isActive ? `underline text-rosePearl-900 dark:text-rosePearl-300` : `text-rosePearl-700 dark:text-rosePearl-600`} href={href}>{children}</Link>
+  )
 }
 
 export default NavLink
