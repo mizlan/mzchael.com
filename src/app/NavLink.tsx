@@ -27,7 +27,9 @@ const NavLink = ({
   }
 
   return (
-    <Link className={isActive ? `underline text-rosePearl-900 dark:text-rosePearl-300` : `text-rosePearl-700 dark:text-rosePearl-600`} href={href}>{children}</Link>
+    <div className="flex flex-col justify-center">
+      <Link className={isActive ? `underline text-rosePearl-900 dark:text-rosePearl-300` : `text-rosePearl-700 dark:text-rosePearl-600`} href={href}>{children}</Link>
+    </div>
   )
 }
 
