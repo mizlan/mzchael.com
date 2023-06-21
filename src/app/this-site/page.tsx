@@ -6,8 +6,7 @@ const ThisSite = () => {
       <section className="flex flex-col gap-3">
         <h1 className="text-3xl font-extrabold">This Site</h1>
         <p>
-          This site was made with Next.js and Tailwind and is the first site
-          I have written using either of those technologies. The colors were generated using
+          This site was made with Next.js and Tailwind! The colors were generated using
           {' '}
           <a href="https://huewind.jordantwells.com">HueWind</a>. The source code is available
           {' '}
