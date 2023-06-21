@@ -5,7 +5,7 @@ import sig from 'public/sig.png'
 
 const Home = () => {
   return (
-    <main className="flex flex-col justify-between px-10 md:px-20 lg:px-32 pt-0 sm:pt-[14vh] h-full flex-grow">
+    <main className="flex flex-col justify-between px-10 md:px-20 lg:px-32 pt-0 md:pt-[14vh] h-full flex-grow">
       <div className="flex flex-col gap-4">
         <h1 className="tracking-wide text-5xl font-black">Hi, I&apos;m Michael!</h1>
         <Balancer className="sm:w-[60vw]">
