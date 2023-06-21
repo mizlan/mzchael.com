@@ -3,7 +3,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import arrow from "public/arrow.svg"
-import squareArrow from "public/square-arrow.svg"
 import { useSelectedLayoutSegment } from 'next/navigation'
 
 const NavLink = ({
