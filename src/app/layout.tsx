@@ -20,15 +20,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Providers>
-          <nav>
-            <ul>
-              <li><NavLink href="/">home</NavLink></li>
-              <li><NavLink href="https://github.com/mizlan">github</NavLink></li>
-              <li><NavLink href="https://www.youtube.com/c/mzzzchael">youtube</NavLink></li>
-              <li><NavLink href="/this-site">this site</NavLink></li>
-              <li><NavLink href="https://blog.mzchael.com">blog</NavLink> </li>
-              <ThemeToggle />
+          <nav className="sm:pb-10 sm:items-center md:justify-end px-10 md:px-20 lg:px-32 pb-0 pt-5 flex flex-row justify-between items-start gap-12">
+            <ul className="sm:items-end sm:flex-row sm:justify-end sm:gap-7 flex flex-col justify-between">
+              <li className="mb-1.5 sm:mb-0"><NavLink href="/">home</NavLink></li>
+              <li className="mb-1.5 sm:mb-0"><NavLink href="https://github.com/mizlan">github</NavLink></li>
+              <li className="mb-1.5 sm:mb-0"><NavLink href="https://www.youtube.com/c/mzzzchael">youtube</NavLink></li>
+              <li className="mb-1.5 sm:mb-0"><NavLink href="/this-site">this site</NavLink></li>
+              <li className="mb-1.5 sm:mb-0"><NavLink href="https://blog.mzchael.com">blog</NavLink> </li>
             </ul>
+            <ThemeToggle />
           </nav>
           {children}
         </Providers>

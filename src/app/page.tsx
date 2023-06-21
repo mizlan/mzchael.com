@@ -5,10 +5,10 @@ import sig from 'public/sig.png'
 
 const Home = () => {
   return (
-    <main className="flex flex-col justify-between px-10 md:px-32 pt-[5vh] md:pt-[14vh] h-full flex-grow">
+    <main className="flex flex-col justify-between px-10 md:px-20 lg:px-32 pt-[5vh] sm:pt-[14vh] h-full flex-grow">
       <div className="flex flex-col gap-4">
-        <h1 className="text-5xl font-black">Hi! I&apos;m Michael.</h1>
-        <Balancer className="md:w-[60vw]">
+        <h1 className="tracking-wide text-5xl font-black">Hi, I&apos;m Michael!</h1>
+        <Balancer className="sm:w-[60vw]">
           I&apos;m a second-year studying computer science at UCLA, and
           I love open source, functional programming, and the Neovim ecosystem.
           Some of my hobbies include analytic philosophy, a&nbsp;cappella, electric guitar, and crosswords.
