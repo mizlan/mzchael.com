@@ -31,19 +31,3 @@ body {
     filter: invert(27%) sepia(4%) saturate(1907%) hue-rotate(317deg) brightness(91%) contrast(76%);
   }
 }
-
-/* a { */
-/*    @apply underline text-wanBlue-700; */
-/* } */
-
-/* .dark a { */
-/*   @apply text-wanBlue-500; */
-/* } */
-
-nav {
-  @apply px-10 md:px-32 pb-10 pt-5;
-}
-
-nav > ul {
-  @apply flex flex-row justify-between md:justify-end md:gap-7;
-}
