@@ -2,7 +2,7 @@ import '../globals.css'
 
 const ThisSite = () => {
   return (
-    <main className="flex flex-col gap-4 px-10 md:px-[15vw] lg:px-[30vw] mb-10">
+    <main className="flex flex-col gap-4 px-10 sm:px-[15vw] lg:px-[30vw] mb-10">
       <section className="flex flex-col gap-3">
         <h1 className="text-3xl font-extrabold">This Site</h1>
         <p>
@@ -24,7 +24,7 @@ const ThisSite = () => {
         </p>
         <p>
           There&apos;s a problem though: because the Spotify API response has an{' '}
-          <code className="bg-rosePearl-700/20 px-1 py-0.5 rounded-md text-sm">isPlaying</code> flag, it might seem as though the endpoint
+          <code className="bg-rosePearl-700/20 px-1 py-0.5 rounded-sm text-sm">isPlaying</code> flag, it might seem as though the endpoint
           effectively returns the <i>most recently played</i> song. This, however,
           is not the case&#8212;the endpoint returns no data after a certain time has
           passed since Spotify was last playing. To remedy this, I utilize the <a href="https://www.last.fm/api">last.fm API</a>
