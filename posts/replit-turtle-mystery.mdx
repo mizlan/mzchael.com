@@ -1,0 +1,27 @@
+
+
+Warning: this is a bit of a rant.
+
+# The Problem
+
+I maintain the TeachLA editor, which, as one of its core capabilities, is a
+Python source file editor that supports
+[`turtle`](https://docs.python.org/3/library/turtle.html) graphics. `turtle`
+graphics are in essence animations that play on a canvas, where a sprite (in
+the shape of a turtle) (visibly) moves around the screen and strokes a path in
+its trail.
+
+Getting the Python code to run isn't too difficult: there are browser
+implementations of Python (that transpile Python source code to Javascript)
+like Brython and Skulpt. But because `turtle` depends on Tk for rendering, which
+is not present in the browser, these implementations each have developed their
+own way of rendering `turtle` graphics. But none of them have the features I need
+most, which is the ability to resize screen without having to replay the entire
+animation. This is useful for:
+
+- resizing the editor and canvas panes by dragging the split divider
+- hiding the canvas pane temporarily, then displaying it again, already rendered
+
+# The Solution (In Theory)
+
+Here's a glimmer of hope: repl.it already has this working on their website.
