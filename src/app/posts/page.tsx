@@ -1,9 +1,17 @@
-'use client'
+import { getAllPostMetadatas } from "@/lib/posts"
 
-import ReplitTurtleMystery from 'posts/replit-turtle-mystery.mdx'
-
-const R = () => {
-  return <ReplitTurtleMystery />
+const Posts = async () => {
+  const postMetadatas = await getAllPostMetadatas()
+  return (
+    <div className="px-40">
+      {postMetadatas.map(({ title, date }) => (
+        <div>
+          <p>{title}</p>
+          <p>{date}</p>
+        </div>
+      ))}
+    </div>
+  )
 }
 
-export default R
+export default Posts
