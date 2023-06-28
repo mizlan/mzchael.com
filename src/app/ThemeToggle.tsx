@@ -51,7 +51,7 @@ const ThemeOption = ({ position, value, ariaLabel, toolTip, icon }: ThemeOptionP
         </span>
       </Tooltip.Trigger>
       <Tooltip.Portal>
-        <Tooltip.Content className="bg-rosePearl-700/10 rounded-md px-2 py-1 text-sm" sideOffset={5}>
+        <Tooltip.Content className="bg-rosePearl-700/5 text-rosePearl-800 dark:text-rosePearl-600 rounded-md px-2 py-1 text-xs" sideOffset={5}>
           {toolTip}
           <Tooltip.Arrow className="fill-rosePearl-700/10" />
         </Tooltip.Content>
@@ -69,14 +69,12 @@ const ThemeToggle = () => {
     setMounted(true)
   }, []);
 
-  /* todo return dummy to prevent layout shift */
-  if (!mounted) return (null);
-
   return (
     <ToggleGroup.Root
       className="shadow-sm inline-flex rounded-[0.53em] bg-day-100/20 dark:bg-night-700/20 p-[1px]"
       type="single"
-      value={theme}
+      disabled={!mounted}
+      value={!mounted ? undefined : theme}
       onValueChange={(value) => {
         if (value) setTheme(value)
       }}
@@ -87,21 +85,21 @@ const ThemeToggle = () => {
         value='system'
         ariaLabel='System theme'
         toolTip='system theme'
-        icon={(cls) => <SunHorizon weight={theme === 'system' ? 'fill' : 'light'} className={cls} />}
+        icon={(cls) => <SunHorizon weight={mounted && theme === 'system' ? 'fill' : 'light'} className={cls} />}
       />
       <ThemeOption
         position='middle'
         value='light'
         ariaLabel='Light theme'
         toolTip='light theme'
-        icon={(cls) => <Sun weight={theme === 'light' ? 'fill' : 'light'} className={cls} />}
+        icon={(cls) => <Sun weight={mounted && theme === 'light' ? 'fill' : 'light'} className={cls} />}
       />
       <ThemeOption
         position='last'
         value='dark'
         ariaLabel='Dark theme'
         toolTip='dark theme'
-        icon={(cls) => <MoonStars weight={theme === 'dark' ? 'fill' : 'light'} className={cls} />}
+        icon={(cls) => <MoonStars weight={mounted && theme === 'dark' ? 'fill' : 'light'} className={cls} />}
       />
     </ToggleGroup.Root>
   )
