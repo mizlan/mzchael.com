@@ -1,6 +1,7 @@
 export const meta = {
   title: "The Repl.it Turtle Mystery",
   date: "2023 06 26",
+  description: "An investigation into how online editors render Python turtle graphics, and the overarching problem that only Repl.it has solved",
 }
 
 Warning: this is a bit of a rant.
@@ -31,4 +32,7 @@ Here's a glimmer of hope: repl.it already has this working on their website:
 
 <video src="replit-turtle-demo.mov" controls />
 
-Bruh
+Notice the delay on resizing. I suspect the turtle graphics are rendered on a
+server and streamed to the browser (like what this person found in this [Stack
+Overflow
+post](https://stackoverflow.com/questions/69727316/how-to-execute-code-in-server-from-browser)

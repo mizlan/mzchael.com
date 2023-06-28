@@ -5,17 +5,19 @@ import { z } from 'zod'
 const postsDirectory = path.join(process.cwd(), 'src', 'posts')
 
 const PostMetadataSchema = z.object({
-  slug: z.string(),
-  link: z.string(),
   title: z.string(),
   date: z.string(),
   description: z.string(),
 })
 
-type PostMetadata = z.infer<typeof PostMetadataSchema>
+const SitePostMetadataSchema = PostMetadataSchema.extend({
+  slug: z.string(),
+  link: z.string(),
+})
 
+type SitePostMetadata = z.infer<typeof SitePostMetadataSchema>
 
-export const getAllPostsSlug = () => {
+export const getAllPostSlugs = () => {
   return (
     fs
       .readdirSync(postsDirectory)
@@ -23,21 +25,21 @@ export const getAllPostsSlug = () => {
   )
 }
 
-export const getPostMetadataBySlug = async (slug: string): Promise<PostMetadata> => {
+export const getPostMetadataBySlug = async (slug: string): Promise<SitePostMetadata> => {
   const { meta } = await import(`../posts/${slug}.mdx`)
   const parsedMeta = PostMetadataSchema.parse(meta)
 
   return {
     slug,
+    link: `/blog/${slug}`,
     title: parsedMeta.title,
     date: parsedMeta.date,
     description: parsedMeta.description,
-    link: `/blog/${slug}`,
   }
 }
 
 export const getAllPostMetadatas = async () => {
-  const slugs = getAllPostsSlug()
+  const slugs = getAllPostSlugs()
   const metadatas = await Promise.all(slugs.map((slug) => getPostMetadataBySlug(slug)))
   metadatas.sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return metadatas

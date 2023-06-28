@@ -1,9 +1,12 @@
 import Balancer from 'react-wrap-balancer'
 import RecentTrack from './RecentTrack'
 import Image from 'next/image'
+import { getAllPostMetadatas } from '@/lib/posts'
 import sig from 'public/sig.png'
 
-const Home = () => {
+const Home = async () => {
+  const p = await getAllPostMetadatas()
+
   return (
     <main className="flex flex-col justify-between px-10 md:px-20 lg:px-32 pt-0 md:pt-[14vh] h-full flex-grow">
       <div className="flex flex-col gap-4">
@@ -23,6 +26,7 @@ const Home = () => {
           className="sig"
           width="160"
         />
+        <p>{p.length}</p>
         <footer className="text-sm text-rosePearl-800/90 dark:text-rosePearl-100/30">&copy; 2023 Michael Lan</footer>
       </div>
     </main>
