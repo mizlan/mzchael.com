@@ -28,14 +28,14 @@ const ThemeOption = ({ position, value, ariaLabel, toolTip, icon }: ThemeOptionP
   }
 
   const twItemClassName = `
-    bg-day-50/40
+    bg-day-50/30
     data-[state=on]:bg-day-50/80
-    dark:bg-night-700/40
+    dark:bg-night-700/30
     dark:data-[state=on]:bg-night-700/80
   `.trim()
   const twIconClassName = `
     fill-rosePearl-700
-    group-data-[state=on]:fill-night-600
+    group-data-[state=on]:fill-rosePearl-800
     dark:fill-rosePearl-600
     dark:group-data-[state=on]:fill-rosePearl-300
   `.trim()
