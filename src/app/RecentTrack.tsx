@@ -60,7 +60,7 @@ const RecentTrack = () => {
 
       <Balancer>
         {data.isPlaying ? "Michael is currently listening to " : "Michael most recently listened to "}
-        <a className="underline text-wanBlue-600" href={data.songUrl}>{data.title}</a>
+        <a className="underline underline-offset-2 text-wanBlue-600" href={data.songUrl}>{data.title}</a>
         {' '}
         by
         {' '}

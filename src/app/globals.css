@@ -7,12 +7,7 @@
 }
 
 body {
-  @apply text-theme-dark bg-day-50;
   background-image: url('/topography.svg');
-}
-
-.dark body {
-  @apply text-day-50 bg-theme-dark;
 }
 
 .sig {
