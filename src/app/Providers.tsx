@@ -2,6 +2,7 @@
 
 import { Provider as BalancerProvider } from 'react-wrap-balancer'
 import { ThemeProvider } from 'next-themes'
+import { Provider as TooltipProvider } from '@radix-ui/react-tooltip'
 
 interface Props {
   children: React.ReactNode;
@@ -9,9 +10,11 @@ interface Props {
 
 const Providers = ({ children }: Props) => {
   return (
-    <ThemeProvider enableSystem={false} attribute="class">
+    <ThemeProvider attribute="class">
       <BalancerProvider>
-        {children}
+        <TooltipProvider delayDuration={500}>
+          {children}
+        </TooltipProvider>
       </BalancerProvider>
     </ThemeProvider>
   )
