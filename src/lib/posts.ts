@@ -4,7 +4,7 @@ import { z } from 'zod'
 
 const postsDirectory = path.join(process.cwd(), 'src', 'posts')
 
-const PostMetadataSchema = z.object({
+export const PostMetadataSchema = z.object({
   title: z.string(),
   date: z.string(),
   description: z.string(),
