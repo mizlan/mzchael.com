@@ -5,6 +5,19 @@ import * as ToggleGroup from '@radix-ui/react-toggle-group'
 import * as Tooltip from '@radix-ui/react-tooltip'
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import localFont from 'next/font/local'
+
+const satoshi = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff2'
+    },
+    {
+      path: '../../public/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff2',
+      style: 'italic'
+    }
+  ]
+})
 
 interface ThemeOptionProps {
   position: 'first' | 'middle' | 'last';
@@ -51,7 +64,7 @@ const ThemeOption = ({ position, value, ariaLabel, toolTip, icon }: ThemeOptionP
         </span>
       </Tooltip.Trigger>
       <Tooltip.Portal>
-        <Tooltip.Content className="bg-rosePearl-700/5 text-rosePearl-800 dark:text-rosePearl-600 rounded-md px-2 py-1 text-xs" sideOffset={5}>
+        <Tooltip.Content className={`${satoshi.className} tracking-wider bg-rosePearl-700/5 text-rosePearl-800 dark:text-rosePearl-600 rounded-md px-2 py-1 text-xs`} sideOffset={5}>
           {toolTip}
           <Tooltip.Arrow className="fill-rosePearl-700/10" />
         </Tooltip.Content>
