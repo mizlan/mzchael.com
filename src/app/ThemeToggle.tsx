@@ -66,7 +66,7 @@ const ThemeOption = ({ position, value, ariaLabel, toolTip, icon }: ThemeOptionP
       <Tooltip.Portal>
         <Tooltip.Content className={`${satoshi.className} tracking-wider bg-rosePearl-700/5 text-rosePearl-800 dark:text-rosePearl-600 rounded-md px-2 py-1 text-xs`} sideOffset={5}>
           {toolTip}
-          <Tooltip.Arrow className="fill-rosePearl-700/10" />
+          <Tooltip.Arrow className="fill-rosePearl-700/5" />
         </Tooltip.Content>
       </Tooltip.Portal>
     </Tooltip.Root>
