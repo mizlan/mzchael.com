@@ -1,27 +1,13 @@
 import Balancer from 'react-wrap-balancer'
 import RecentTrack from './RecentTrack'
-import localFont from 'next/font/local'
 import Image from 'next/image'
 import sig from 'public/sig.png'
-
-const switzer = localFont({
-  src: [
-    {
-      path: '../../public/fonts/Switzer_Complete/Fonts/WEB/fonts/Switzer-Variable.woff2'
-    },
-    {
-      path: '../../public/fonts/Switzer_Complete/Fonts/WEB/fonts/Switzer-VariableItalic.woff2',
-      style: 'italic'
-    }
-  ]
-})
-
 
 const Home = async () => {
   return (
     <main className="flex flex-col justify-between px-10 md:px-20 lg:px-32 pt-0 md:pt-[14vh] h-full flex-grow">
       <div className="flex flex-col gap-4">
-        <h1 className={`${switzer.className} uppercase tracking-wide text-6xl font-black`}>Hi, I&apos;m Michael!</h1>
+        <h1 className={`font-generalsans uppercase tracking-wide text-6xl font-black ml-[-0.045em]`}>Michael Lan</h1>
         <Balancer className="sm:w-[60vw]">
           I&apos;m a second-year studying computer science at UCLA, and
           I love open source, functional programming, and the Neovim ecosystem.

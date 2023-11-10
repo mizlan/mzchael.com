@@ -1,10 +1,10 @@
 import '../globals.css'
 
-const AboutMe = () => {
+const About = () => {
   return (
     <main className="flex flex-col gap-4 px-10 sm:px-[15vw] lg:px-[30vw] mb-10">
       <section className="flex flex-col gap-3">
-        <h1 className="text-3xl font-extrabold">More About Me</h1>
+        <h1 className="text-3xl font-black font-generalsans uppercase">More About Me</h1>
         <p>
           I&apos;m a second-year at UCLA majoring in computer science and minoring in philosophy.
           My research interests include functional programming, programming language design,
@@ -17,7 +17,7 @@ const AboutMe = () => {
         </p>
       </section>
       <section className="flex flex-col gap-3">
-        <h2 className="text-2xl font-extrabold">Open Source</h2>
+        <h2 className="text-xl font-black font-generalsans uppercase">Open Source</h2>
         <p>
           I am a big advocate of open-source software and the free software philosophy.
           To that end, I am an avid contributor to open-source projects I use
@@ -36,7 +36,7 @@ const AboutMe = () => {
         </p>
       </section>
       <section className="flex flex-col gap-3">
-        <h2 className="text-2xl font-extrabold">Reach Out!</h2>
+        <h2 className="text-xl font-black font-generalsans uppercase">Reach Out!</h2>
         <p>
           I&apos;d love to talk with you about anything! Reach me at michaellan AT ucla DOT edu.
           It might take a few days for me to respond.
@@ -46,4 +46,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default About
