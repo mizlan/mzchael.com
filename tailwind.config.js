@@ -86,6 +86,10 @@ module.exports = {
           900: "#1c0b21",
         },
       },
+      fontFamily: {
+        "generalsans": "var(--font-generalsans)",
+        "inter": "var(--font-inter)",
+      }
     },
   },
   plugins: [

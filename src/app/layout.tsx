@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import Providers from './Providers'
 import Navigation from './Navigation'
 
-const inter = Inter({ style: ['normal'], subsets: ['latin'] })
+const inter = Inter({ style: ['normal'], subsets: ['latin'], variable: '--font-inter' })
 
 const satoshi = localFont({
   src: [
@@ -18,6 +18,18 @@ const satoshi = localFont({
   ]
 })
 
+const generalSans = localFont({
+  src: [
+    {
+      path: '../../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Variable.woff2'
+    },
+    {
+      path: '../../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-VariableItalic.woff2',
+      style: 'italic'
+    }
+  ],
+  variable: '--font-generalsans'
+})
 
 export const metadata = {
   title: 'mzchael.com',
@@ -32,7 +44,12 @@ export default function RootLayout({
   const font = inter.className
   const twScreens = process.env.NODE_ENV === 'development' ? 'debug-screens' : ''
   return (
-    <html lang="en" style={{ scrollbarGutter: 'stable' }} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${generalSans.variable} ${inter.variable}`}
+      style={{ scrollbarGutter: 'stable' }}
+      suppressHydrationWarning
+    >
       <body
         className={`${font} ${twScreens} flex flex-col min-h-screen text-night-700 bg-day-50 dark:text-day-50 dark:bg-theme-dark`}
         style={{}}
