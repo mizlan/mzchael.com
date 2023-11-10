@@ -22,7 +22,7 @@ const postProcess = (data: z.infer<typeof RecentTrackResponse>) => {
    * remove brackets from song title, in part to help keep titles
    * at a manageable length
    */
-  const title = data.title.replaceAll(/\(.*?\)/g, '').trim()
+  const title = data.title.replaceAll(/\(.*?\)/g, '').replaceAll(/\[.*?\]/g, '').trim()
   return {
     ...data,
     title
