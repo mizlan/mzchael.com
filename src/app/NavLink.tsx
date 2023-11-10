@@ -21,7 +21,7 @@ const NavItem = ({
   if (!href.startsWith("/")) {
     return (
       <NavigationMenu.Item className="flex flex-row items-center gap-1 mb-1.5 md:mb-0">
-        <NavigationMenu.Link asChild>
+        <NavigationMenu.Link className="focus:text-rosePearl-900 dark:focus:text-rosePearl-600" asChild>
           <Link target="_blank" className='text-rosePearl-700 dark:text-rosePearl-600' href={href}>{children}</Link>
         </NavigationMenu.Link>
         <Image src={arrow} alt="" className="w-1.5 h-1.5 -translate-y-1" />
@@ -31,7 +31,7 @@ const NavItem = ({
 
   return (
     <NavigationMenu.Item className="flex flex-row items-center gap-1 mb-1.5 md:mb-0">
-      <NavigationMenu.Link asChild>
+      <NavigationMenu.Link className="focus:text-rosePearl-900 dark:focus:text-rosePearl-300" asChild>
         <Link className={isActive ? `underline underline-offset-4 decoration-2 text-rosePearl-900 dark:text-rosePearl-300` : `text-rosePearl-700 dark:text-rosePearl-600`} href={href}>{children}</Link>
       </NavigationMenu.Link>
     </NavigationMenu.Item>
