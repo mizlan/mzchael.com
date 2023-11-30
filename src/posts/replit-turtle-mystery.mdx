@@ -4,11 +4,9 @@ export const meta = {
   description: "An investigation into how online editors render Python turtle graphics, and the overarching problem that only Repl.it has solved",
 }
 
-Warning: this is a bit of a rant.
-
 # The Problem
 
-I maintain the TeachLA editor, which, as one of its core capabilities, is a
+I maintain the TeachLA editor, which as one of its core capabilities, is a
 Python source file editor that supports
 [`turtle`](https://docs.python.org/3/library/turtle.html) graphics. `turtle`
 graphics are in essence animations that play on a canvas, where a sprite (in
@@ -37,7 +35,7 @@ Here's a glimmer of hope: repl.it already has this working on their website:
 Notice the delay on resizing. I suspect the turtle graphics are rendered on a
 server and streamed to the browser (like what this person found in this [Stack
 Overflow
-post](https://stackoverflow.com/questions/69727316/how-to-execute-code-in-server-from-browser)
+post](https://stackoverflow.com/questions/69727316/how-to-execute-code-in-server-from-browser)).
 
 The optimal solution, in my opinion, is to run all the Python source code on a server with
 an actual Python runtime instead of one from the browser. Even though this means the turtle
@@ -46,3 +44,12 @@ graphics aren't as smooth (since they aren't "native") as
 [Skulpt](https://www.pythonsandbox.com/turtle), it is still a more robust long term solution.
 
 I am still in the process of contacting repl.it to find out how it's done!
+
+**Update** (Oct 26):
+
+Some kind folks responded to me [here](https://ask.replit.com/t/understanding-how-turtle-works/77877/2?u=overscore),
+and it seems a key tool here is X11vnc, which is a facility that would
+allow streaming of graphics from an X server to a client. This
+could be used with Apache Guacamole managing the access to the remote server, potentially!
+
+It still would be a lot of work to implement—if you'd like to help, message me!
