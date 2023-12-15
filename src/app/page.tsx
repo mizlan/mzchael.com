@@ -1,7 +1,6 @@
 import Balancer from 'react-wrap-balancer'
 import RecentTrack from './RecentTrack'
 import Image from 'next/image'
-import sig from 'public/sig.png'
 
 const Home = async () => {
   return (
@@ -18,10 +17,11 @@ const Home = async () => {
       </div>
       <div className="flex flex-col gap-7 mb-20 mt-16">
         <Image
-          src={sig}
+          src="/sig.png"
           alt="Michael's signature"
           className="sig"
-          width="160"
+          width={160}
+          height={91.88}
         />
         <footer className="text-sm text-rosePearl-800/90 dark:text-rosePearl-100/30">&copy; 2023 Michael Lan</footer>
       </div>

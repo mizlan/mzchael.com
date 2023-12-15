@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import arrow from "public/arrow.svg"
 import { useSelectedLayoutSegment } from 'next/navigation'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 
@@ -24,7 +23,7 @@ const NavItem = ({
         <NavigationMenu.Link className="focus:text-rosePearl-900 dark:focus:text-rosePearl-600" asChild>
           <Link target="_blank" className='text-rosePearl-700 dark:text-rosePearl-600' href={href}>{children}</Link>
         </NavigationMenu.Link>
-        <Image src={arrow} alt="" className="w-1.5 h-1.5 -translate-y-1" />
+        <Image src="/arrow.svg" alt="" width={14.1209} height={14.1271} className="w-1.5 h-1.5 -translate-y-1" />
       </NavigationMenu.Item>
     )
   }

@@ -1,7 +1,5 @@
 'use client'
 
-import waveform from 'public/waveform.svg'
-import airpods from 'public/airpods.svg'
 import Image from 'next/image'
 import { z } from 'zod'
 import { Balancer } from 'react-wrap-balancer'
@@ -48,13 +46,17 @@ const RecentTrack = () => {
       <div className="flex flex-col justify-center">
         {data.device === 'Michael\'s AirPods Pro' ?
           <Image
-            src={airpods}
+            src="/airpods.svg"
             alt="airpods"
+            width={24.126}
+            height={15.5485}
           />
           :
           <Image
-            src={waveform}
+            src="/waveform.svg"
             alt="waveform"
+            width={16.1982}
+            height={18.3604}
           />}
       </div>
 
