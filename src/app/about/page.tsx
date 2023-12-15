@@ -8,12 +8,11 @@ const About = () => {
         <p>
           I&apos;m a second-year at UCLA majoring in computer science and minoring in philosophy.
           My research interests include functional programming, programming language design,
-          and compilers.
+          formal verification, and compilers.
         </p>
         <p>
-          I also love software engineering&#8212;I have 2+ years of experience in full-stack software
-          development and DevOps using modern technologies
-          (primarily in Python, Node, TypeScript, and React).
+          I also love software engineering&#8212;I enjoy developing with technologies such as
+          modern TypeScript (React), modern C++, OCaml, Haskell, and Clojure.
         </p>
       </section>
       <section className="flex flex-col gap-3">
