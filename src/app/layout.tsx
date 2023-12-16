@@ -6,18 +6,6 @@ import Navigation from './Navigation'
 
 const inter = Inter({ style: ['normal'], subsets: ['latin'], variable: '--font-inter' })
 
-const satoshi = localFont({
-  src: [
-    {
-      path: '../../public/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff2'
-    },
-    {
-      path: '../../public/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff2',
-      style: 'italic'
-    }
-  ]
-})
-
 const generalSans = localFont({
   src: [
     {
