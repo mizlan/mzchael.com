@@ -5,6 +5,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/mdx-components.tsx',
   ],
   theme: {
     extend: {
@@ -89,11 +90,11 @@ module.exports = {
       fontFamily: {
         "generalsans": "var(--font-generalsans)",
         "inter": "var(--font-inter)",
+        "jetbrainsmono": "var(--font-jetbrainsmono)",
       }
     },
   },
   plugins: [
     require('tailwindcss-debug-screens'),
-    require('@tailwindcss/typography'),
   ],
 }

@@ -1,7 +1,4 @@
-import { JetBrains_Mono } from 'next/font/google'
 import '../globals.css'
-
-const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] })
 
 const Site = () => {
   return (
@@ -26,7 +23,7 @@ const Site = () => {
         </p>
         <p>
           There&apos;s a problem though: because the Spotify API response has an{' '}
-          <code className={`${jetbrainsMono.className} bg-rosePearl-700/20 px-1 py-0.5 rounded-sm text-sm`}>isPlaying</code> flag, it might seem as though the endpoint
+          <code className={`font-jetbrainsmono bg-rosePearl-700/20 px-1 py-0.5 rounded-sm text-sm`}>isPlaying</code> flag, it might seem as though the endpoint
           effectively returns the <i>most recently played</i> song. This, however,
           is not the case&#8212;the endpoint returns no data after a certain time has
           passed since Spotify was last playing. To remedy this, I utilize the

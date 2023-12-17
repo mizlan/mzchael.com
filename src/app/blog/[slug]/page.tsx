@@ -11,14 +11,14 @@ const Post = async ({ params }: PostProps) => {
 
   const parsedMeta = PostMetadataSchema.parse(meta)
   return (
-    <article className="px-40 mb-8">
-      <header className="mt-14 mb-8 text-center">
-        <h1 className="text-5xl text-day-600 font-bold">{parsedMeta.title}</h1>
+    <article className="mb-8 flex flex-col items-center">
+      <header className="mt-14 mb-4 text-center">
+        <h1 className="font-generalsans uppercase text-4xl font-bold">{parsedMeta.title}</h1>
         <time className="block mt-1.5 text-md opacity-80" dateTime={parsedMeta.date}>
           {parsedMeta.date}
         </time>
       </header>
-      <section className="prose prose-stone dark:prose-invert m-auto">
+      <section className="mx-10 sm:w-[35em]">
         <Component />
       </section>
     </article>

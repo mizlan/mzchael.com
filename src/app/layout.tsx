@@ -1,10 +1,12 @@
 import './globals.css'
 import localFont from 'next/font/local'
-import { Inter } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import Providers from './Providers'
 import Navigation from './Navigation'
 
 const inter = Inter({ style: ['normal'], subsets: ['latin'], variable: '--font-inter' })
+
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrainsmono' })
 
 const generalSans = localFont({
   src: [
@@ -34,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${generalSans.variable} ${inter.variable}`}
+      className={`${generalSans.variable} ${inter.variable} ${jetbrainsMono.variable}`}
       style={{ scrollbarGutter: 'stable' }}
       suppressHydrationWarning
     >
