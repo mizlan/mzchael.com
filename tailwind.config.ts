@@ -1,42 +1,43 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: 'class',
+import type { Config } from 'tailwindcss'
+
+const config : Config = {
+  darkMode: "class",
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/mdx-components.tsx',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/mdx-components.tsx",
   ],
   theme: {
     extend: {
       colors: {
         theme: {
           light: "#e6e2dd",
-          dark: "#302630"
+          dark: "#302630",
         },
         day: {
-          50: '#f8f1eb',
-          100: '#dfd9d3',
-          200: '#c7c0b9',
-          300: '#b1a79c',
-          400: '#9b8f80',
-          500: '#827566',
-          600: '#655b4f',
-          700: '#484138',
-          800: '#2c2720',
-          900: '#130c04',
+          50: "#f8f1eb",
+          100: "#dfd9d3",
+          200: "#c7c0b9",
+          300: "#b1a79c",
+          400: "#9b8f80",
+          500: "#827566",
+          600: "#655b4f",
+          700: "#484138",
+          800: "#2c2720",
+          900: "#130c04",
         },
         night: {
-          50: '#f7f0f7',
-          100: '#ddd4dd',
-          200: '#c5b9c5',
-          300: '#ae9cae',
-          400: '#978097',
-          500: '#7d667d',
-          600: '#625062',
-          700: '#463946',
-          800: '#2b222b',
-          900: '#110911',
+          50: "#f7f0f7",
+          100: "#ddd4dd",
+          200: "#c5b9c5",
+          300: "#ae9cae",
+          400: "#978097",
+          500: "#7d667d",
+          600: "#625062",
+          700: "#463946",
+          800: "#2b222b",
+          900: "#110911",
         },
         rosePearl: {
           50: "#e9e4e0",
@@ -88,13 +89,13 @@ module.exports = {
         },
       },
       fontFamily: {
-        "generalsans": "var(--font-generalsans)",
-        "inter": "var(--font-inter)",
-        "jetbrainsmono": "var(--font-jetbrainsmono)",
-      }
+        generalsans: "var(--font-generalsans)",
+        inter: "var(--font-inter)",
+        jetbrainsmono: "var(--font-jetbrainsmono)",
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-debug-screens'),
-  ],
-}
+  plugins: [require("tailwindcss-debug-screens")],
+};
+
+export default config
