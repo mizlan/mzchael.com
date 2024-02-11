@@ -23,7 +23,7 @@ const Home = async () => {
           width={160}
           height={91.88}
         />
-        <footer className="text-sm text-rosePearl-800/90 dark:text-rosePearl-100/30">&copy; 2023 Michael Lan</footer>
+        <footer className="text-sm text-rosePearl-800/90 dark:text-rosePearl-100/30">&copy; 2024 Michael Lan</footer>
       </div>
     </main>
   )
