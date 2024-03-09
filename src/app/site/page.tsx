@@ -24,7 +24,7 @@ const Site = () => {
         </p>
       </section>
       <section className="flex flex-col gap-3">
-        <h2 className="text-xl font-black font-generalsans uppercase">
+        <h2 className="text-xl font-semibold font-generalsans uppercase">
           Music Player Widget
         </h2>
         <p>

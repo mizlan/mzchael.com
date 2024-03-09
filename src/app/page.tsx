@@ -1,6 +1,7 @@
 import Balancer from "react-wrap-balancer";
 import RecentTrack from "./RecentTrack";
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = async () => {
   return (
@@ -14,12 +15,29 @@ const Home = async () => {
         <Balancer className="sm:w-[60vw]">
           I&apos;m a second-year studying computer science at UCLA, and I love
           open source, functional programming, and the Neovim ecosystem. Visit
-          my YouTube channel, where I post videos on occasion, and my GitHub
-          profile, where I have a variety of exciting and innovative projects.
-          Some of my other hobbies include analytic philosophy, a&nbsp;cappella,
-          electric guitar, and crosswords. Oh, and I have a{" "}
+          my{" "}
+          <Link
+            target="_blank"
+            className="underline underline-offset-2"
+            href="https://github.com/mizlan"
+          >
+            YouTube channel
+          </Link>
+          {" "}
+          where I post videos on occasion; and my{" "}
+          <Link
+            target="_blank"
+            className="peer underline underline-offset-2"
+            href="https://github.com/mizlan"
+          >
+            GitHub profile
+          </Link>
+          {" "}
+          where I have some exciting projects! Some of my
+          other hobbies include analytic philosophy, a&nbsp;cappella, electric
+          guitar, and crosswords. Oh, and I have a{" "}
           <a
-            className="underline underline-offset-2 visited:text-lavenderHaze-600 dark:visited:text-lavenderHaze-400"
+            className="underline underline-offset-2"
             href="https://boardgamegeek.com/collection/user/BallOfSalt"
           >
             board game collection
