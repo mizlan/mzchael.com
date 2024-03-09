@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import * as NavigationMenu from '@radix-ui/react-navigation-menu'
-import ThemeToggle from './ThemeToggle'
-import NavItem from './NavLink'
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import ThemeToggle from "./ThemeToggle";
+import NavItem from "./NavLink";
 
 const Navigation = () => {
   return (
@@ -19,7 +19,7 @@ const Navigation = () => {
       </NavigationMenu.List>
       <ThemeToggle />
     </NavigationMenu.Root>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url('/topography.svg');
+  background-image: url("/topography.svg");
 }
 
 .sig {
@@ -20,9 +20,11 @@ body {
 
 @layer components {
   .sig-dark {
-    filter: invert(95%) sepia(13%) saturate(552%) hue-rotate(304deg) brightness(104%) contrast(90%);
+    filter: invert(95%) sepia(13%) saturate(552%) hue-rotate(304deg)
+      brightness(104%) contrast(90%);
   }
   .sig-light {
-    filter: invert(27%) sepia(4%) saturate(1907%) hue-rotate(317deg) brightness(91%) contrast(76%);
+    filter: invert(27%) sepia(4%) saturate(1907%) hue-rotate(317deg)
+      brightness(91%) contrast(76%);
   }
 }

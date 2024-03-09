@@ -2,7 +2,7 @@ export const meta = {
   title: "Music Setup",
   date: "2022-06-17",
   description: "A walkthrough of how I listen to good-quality music",
-}
+};
 
 I use [Beets](https://github.com/beetbox/beets) and [Soulseek](http://www.slsknet.org) to obtain and manage my music. I use Beets to organize and tag my `.mp3` files. Beets is a python package that runs in the command line (which means it is a bit annoying to install with `pip` and whatnot). Soulseek is a graphical application that allows users to download files (mostly music) from other users' filesystems through peer-to-peer file sharing.[^1] Both are available for major operating systems. In addition, I do use the Apple Music app to play music, which has the important benefit of allowing me to sync my music to my iPhone using the built-in sync-ing tools.[^2][^3]
 
@@ -21,6 +21,7 @@ pip install beets
 ```
 
 My workflow then consists of me searching up music on Soulseek, downloading it, and importing it through the Beets program `beet`. I've configured Soulseek's downloaded music to go into `~/Soulseek Downloads` without fuss using the options:
+
 - "Don't put downloads in Downloading and Complete folders"
 - "Don't create username folders".
 
@@ -42,6 +43,7 @@ library: ~/beets/musiclibrary.db
 After the music is there, I `cd` to my `~/Soulseek Downloads` folder and use `beet import` to import my music. My configuration uses `move: yes` which means Beets will remove the files from the downloads folder, keeping it clean (Beets stores its own files, along with database to search it). The importing process will query the MusicBrainz database to match songs and albums, and it does a very good job at doing so.
 
 After importing my music, I run `beet play`, which will attempt to play all my music. If there is a large-enough number of songs, it will warn but I play anyway. This is because I want the Apple Music to "notice" my music files so they can be synced. Importantly, I uncheck the following option in Apple Music preferences, to prevent duplication of my music files:
+
 - "Copy files to music Media folder when adding to library"
 
 After this is done, I can perform syncs normally. For me personally, I like more granularity so in my music sync settings I have "Sync: Selected artists, albums, genres, and playlists" and then I manually add playlists and albums. And that's all![^4]

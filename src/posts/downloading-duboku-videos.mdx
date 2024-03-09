@@ -2,7 +2,7 @@ export const meta = {
   title: "Downloading Duboku Videos",
   date: "2022-07-21",
   description: "I wrote a script to download videos",
-}
+};
 
 I've taken the logic of [limkokhole's
 downloader](https://github.com/limkokhole/duboku-downloader/) and reimplemented
@@ -14,9 +14,10 @@ this script, I've learnt about how HTTP Live Streaming (HLS) works, namely, the
 use of small `.ts` files to prevent the need of downloading a potentially large
 video all at once.
 
-[^1]: I do not endorse downloading videos from Duboku. I am a law-abiding
-  citizen. Plus it's not the downloader that should be prosecuted but the
-  uploader. Also, I didn't even write this script for myself.
+[^1]:
+    I do not endorse downloading videos from Duboku. I am a law-abiding
+    citizen. Plus it's not the downloader that should be prosecuted but the
+    uploader. Also, I didn't even write this script for myself.
 
 My script has quite a few dependencies, and I couldn't find a way to package
 it. PAR Packager could not bundle everything correctly, maybe I can fix that in

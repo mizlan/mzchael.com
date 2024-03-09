@@ -2,7 +2,7 @@ export const meta = {
   title: "A Significant Figures Calculator",
   date: "2022-09-22",
   description: "A bit about my significant figures calculator",
-}
+};
 
 ![Website Demo](/significant-figures/demo.png)
 
@@ -25,11 +25,12 @@ version of it. It's written in Haskell and hosted
 [here](https://github.com/mizlan/significant-figures/).
 
 And while Heroku's free tier still exists ([it's going away soon](https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq)), there is a
-web version [here](significant-figures.herokuapp.com/). The HTML, JS *and* CSS are all written in Haskell using DSLs. :)
+web version [here](significant-figures.herokuapp.com/). The HTML, JS _and_ CSS are all written in Haskell using DSLs. :)
 
 Its implementation uses, among many other things:
-* the parser combinator library [parsec](https://hackage.haskell.org/package/parsec-3.1.15.1) for elegant LL(1) parsing
-* the property testing library [QuickCheck](https://hackage.haskell.org/package/QuickCheck-2.14.2/) for generating arbitrary tests
+
+- the parser combinator library [parsec](https://hackage.haskell.org/package/parsec-3.1.15.1) for elegant LL(1) parsing
+- the property testing library [QuickCheck](https://hackage.haskell.org/package/QuickCheck-2.14.2/) for generating arbitrary tests
 
 and supports a **WHOLE LOTTA STUFF** you'd want to do with sigfigs! Check it out.
 
