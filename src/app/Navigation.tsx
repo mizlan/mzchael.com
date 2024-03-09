@@ -12,8 +12,6 @@ const Navigation = () => {
       <NavigationMenu.List className="flex flex-col justify-between md:items-end md:flex-row md:justify-end md:gap-7">
         <NavItem href="/">home</NavItem>
         <NavItem href="/about">about</NavItem>
-        <NavItem href="https://github.com/mizlan">github</NavItem>
-        <NavItem href="https://www.youtube.com/c/mzzzchael">youtube</NavItem>
         <NavItem href="/site">site</NavItem>
         <NavItem href="/blog">blog</NavItem>
       </NavigationMenu.List>

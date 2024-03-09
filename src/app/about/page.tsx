@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </section>
         <section className="flex flex-col gap-3">
-          <h2 className="text-xl font-black font-generalsans uppercase">
+          <h2 className="text-xl font-semibold font-generalsans uppercase">
             Open Source
           </h2>
           <p>
@@ -41,7 +41,7 @@ const About = () => {
           <p>Yeah. I&apos;m just really into text editors, it seems :)</p>
         </section>
         <section className="flex flex-col gap-3">
-          <h2 className="text-xl font-black font-generalsans uppercase">
+          <h2 className="text-xl font-semibold font-generalsans uppercase">
             Reach Out!
           </h2>
           <p>
