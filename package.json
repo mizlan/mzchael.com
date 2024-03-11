@@ -35,5 +35,9 @@
     "tailwindcss-debug-screens": "^2.2.1",
     "typescript": "^5.1.6",
     "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.12"
   }
 }
