@@ -1,5 +1,3 @@
-import "../globals.css";
-
 const Site = () => {
   return (
     <main className="flex flex-col gap-4 px-10 sm:px-[15vw] lg:px-[30vw] mb-10">
@@ -44,15 +42,18 @@ const Site = () => {
             isPlaying
           </code>{" "}
           flag, it might seem as though the endpoint effectively returns the{" "}
-          <i>most recently played</i> song. This, however, is not the
+          <i>most recently played</i> song. But this is not the
           case&#8212;the endpoint returns no data after a certain time has
           passed since Spotify was last playing. To remedy this, I utilize the{" "}
           <a className="underline" href="https://www.last.fm/api">
             last.fm API
           </a>{" "}
           to query my most recently logged song, which has the quirk that it
-          only logs a song [after at least half of the song has been
-          played](https://www.last.fm/api/scrobbling). But that's good enough
+          only logs a song{" "}
+          <a className="underline" href="https://www.last.fm/api/scrobbling">
+            after at least half of the song has been played
+          </a>
+          . But that's good enough.
         </p>
       </section>
     </main>

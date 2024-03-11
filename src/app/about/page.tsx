@@ -1,5 +1,3 @@
-import "../globals.css";
-
 const About = () => {
   return (
     <div className="flex flex-col items-center ">
