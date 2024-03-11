@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const Home = async () => {
   return (
-    <main className="flex flex-col justify-between px-10 md:px-20 lg:px-32 pt-0 md:pt-[14vh] h-full flex-grow">
+    <main className="flex h-full flex-grow flex-col justify-between px-10 pt-0 md:px-20 md:pt-[14vh] lg:px-32">
       <div className="flex flex-col gap-4">
         <h1
-          className={`font-generalsans uppercase tracking-wide text-6xl font-black ml-[-0.045em]`}
+          className={`ml-[-0.045em] font-generalsans text-6xl font-black uppercase tracking-wide`}
         >
           Michael Lan
         </h1>
@@ -22,8 +22,7 @@ const Home = async () => {
             href="https://github.com/mizlan"
           >
             YouTube channel
-          </Link>
-          {" "}
+          </Link>{" "}
           where I post videos on occasion; and my{" "}
           <Link
             target="_blank"
@@ -31,11 +30,10 @@ const Home = async () => {
             href="https://github.com/mizlan"
           >
             GitHub profile
-          </Link>
-          {" "}
-          where I have some exciting projects! Some of my
-          other hobbies include analytic philosophy, a&nbsp;cappella, electric
-          guitar, and crosswords. Oh, and I have a{" "}
+          </Link>{" "}
+          where I have some exciting projects! Some of my other hobbies include
+          analytic philosophy, a&nbsp;cappella, electric guitar, and crosswords.
+          Oh, and I have a{" "}
           <a
             className="underline underline-offset-2"
             href="https://boardgamegeek.com/collection/user/BallOfSalt"
@@ -46,7 +44,7 @@ const Home = async () => {
         </Balancer>
         <RecentTrack />
       </div>
-      <div className="flex flex-col gap-7 mb-20 mt-16">
+      <div className="mb-20 mt-16 flex flex-col gap-7">
         <Image
           src="/sig.png"
           alt="Michael's signature"

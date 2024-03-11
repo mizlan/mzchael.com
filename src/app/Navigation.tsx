@@ -7,9 +7,9 @@ import NavItem from "./NavLink";
 const Navigation = () => {
   return (
     <NavigationMenu.Root
-      className={`uppercase font-generalsans font-medium text-md tracking-wide flex flex-row justify-between items-start gap-12 mt-5 mb-10 md:items-center xl:justify-end px-10 md:px-20 lg:px-32`}
+      className={`text-md mb-10 mt-5 flex flex-row items-start justify-between gap-12 px-10 font-generalsans font-medium uppercase tracking-wide md:items-center md:px-20 lg:px-32 xl:justify-end`}
     >
-      <NavigationMenu.List className="flex items-end flex-row justify-end gap-7">
+      <NavigationMenu.List className="flex flex-row items-end justify-end gap-7">
         <NavItem href="/">home</NavItem>
         <NavItem href="/about">about</NavItem>
         <NavItem href="/site">site</NavItem>

@@ -1,9 +1,9 @@
 const About = () => {
   return (
     <div className="flex flex-col items-center ">
-      <main className="flex flex-col gap-4 mx-10 sm:w-[35em] mb-10">
+      <main className="mx-10 mb-10 flex flex-col gap-4 sm:w-[35em]">
         <section className="flex flex-col gap-3">
-          <h1 className="text-3xl font-black font-generalsans uppercase">
+          <h1 className="font-generalsans text-3xl font-black uppercase">
             More About Me
           </h1>
           <p>
@@ -19,7 +19,7 @@ const About = () => {
           </p>
         </section>
         <section className="flex flex-col gap-3">
-          <h2 className="text-xl font-semibold font-generalsans uppercase">
+          <h2 className="font-generalsans text-xl font-semibold uppercase">
             Open Source
           </h2>
           <p>
@@ -39,7 +39,7 @@ const About = () => {
           <p>Yeah. I&apos;m just really into text editors, it seems :)</p>
         </section>
         <section className="flex flex-col gap-3">
-          <h2 className="text-xl font-semibold font-generalsans uppercase">
+          <h2 className="font-generalsans text-xl font-semibold uppercase">
             Reach Out!
           </h2>
           <p>

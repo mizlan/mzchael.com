@@ -1,8 +1,8 @@
 const Site = () => {
   return (
-    <main className="flex flex-col gap-4 px-10 sm:px-[15vw] lg:px-[30vw] mb-10">
+    <main className="mb-10 flex flex-col gap-4 px-10 sm:px-[15vw] lg:px-[30vw]">
       <section className="flex flex-col gap-3">
-        <h1 className="text-3xl font-black font-generalsans uppercase">
+        <h1 className="font-generalsans text-3xl font-black uppercase">
           This Site
         </h1>
         <p>
@@ -22,7 +22,7 @@ const Site = () => {
         </p>
       </section>
       <section className="flex flex-col gap-3">
-        <h2 className="text-xl font-semibold font-generalsans uppercase">
+        <h2 className="font-generalsans text-xl font-semibold uppercase">
           Music Player Widget
         </h2>
         <p>
@@ -37,14 +37,14 @@ const Site = () => {
         <p>
           There&apos;s a problem though: because the Spotify API response has an{" "}
           <code
-            className={`font-jetbrainsmono bg-rosePearl-700/20 px-1 py-0.5 rounded-sm text-sm`}
+            className={`rounded-sm bg-rosePearl-700/20 px-1 py-0.5 font-jetbrainsmono text-sm`}
           >
             isPlaying
           </code>{" "}
           flag, it might seem as though the endpoint effectively returns the{" "}
-          <i>most recently played</i> song. But this is not the
-          case&#8212;the endpoint returns no data after a certain time has
-          passed since Spotify was last playing. To remedy this, I utilize the{" "}
+          <i>most recently played</i> song. But this is not the case&#8212;the
+          endpoint returns no data after a certain time has passed since Spotify
+          was last playing. To remedy this, I utilize the{" "}
           <a className="underline" href="https://www.last.fm/api">
             last.fm API
           </a>{" "}

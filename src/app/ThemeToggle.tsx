@@ -52,7 +52,7 @@ const ThemeOption = ({
         {/* span is a hack: https://github.com/radix-ui/primitives/discussions/560 */}
         <span>
           <ToggleGroup.Item
-            className={`group ${rounding} ${spacing} w-8 h-7 flex items-center justify-center ${twItemClassName}`}
+            className={`group ${rounding} ${spacing} flex h-7 w-8 items-center justify-center ${twItemClassName}`}
             value={value}
             aria-label={ariaLabel}
           >
@@ -62,7 +62,7 @@ const ThemeOption = ({
       </Tooltip.Trigger>
       <Tooltip.Portal>
         <Tooltip.Content
-          className={`font-inter bg-rosePearl-700/5 text-rosePearl-800 dark:text-rosePearl-600 rounded-md px-2 py-1 text-xs`}
+          className={`rounded-md bg-rosePearl-700/5 px-2 py-1 font-inter text-xs text-rosePearl-800 dark:text-rosePearl-600`}
           sideOffset={5}
         >
           {toolTip}
@@ -83,7 +83,7 @@ const ThemeToggle = () => {
 
   return (
     <ToggleGroup.Root
-      className="shadow-sm inline-flex rounded-[0.53em] bg-day-100/20 dark:bg-night-700/20 p-[1px]"
+      className="inline-flex rounded-[0.53em] bg-day-100/20 p-[1px] shadow-sm dark:bg-night-700/20"
       type="single"
       disabled={!mounted}
       value={!mounted ? undefined : theme}

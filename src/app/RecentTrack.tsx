@@ -69,7 +69,7 @@ const RecentTrack = () => {
           ? "Michael is currently listening to "
           : "Michael most recently listened to "}
         <a
-          className="underline underline-offset-2 text-wanBlue-600"
+          className="text-wanBlue-600 underline underline-offset-2"
           href={data.songUrl}
         >
           {data.title}
