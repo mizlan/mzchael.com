@@ -32,11 +32,50 @@ const About = () => {
             interactive refactoring tool for the Neovim text editor.
           </p>
           <p>
-            I also maintain the UCLA ACM TeachLA Editor, an open-source,
-            full-stack kid-friendly text editor used by ACM TeachLA to teach
-            kids how to program!
+            In my second year at UCLA, I was also the maintainer of the UCLA ACM
+            TeachLA Editor, an open-source, full-stack kid-friendly text editor
+            used by ACM TeachLA to teach kids how to program!
           </p>
           <p>Yeah. I&apos;m just really into text editors, it seems :)</p>
+        </section>
+        <section className="flex flex-col gap-3">
+          <h2 className="font-generalsans text-xl font-semibold uppercase">
+            My Coveted Setup
+          </h2>
+          <p>I have been asked by multiple people to share my setup.</p>
+          <h3 className="font-generalsans text-lg font-semibold uppercase">
+            Hardware
+          </h3>
+          <p>
+            I use a 2021 MacBook Pro running Sonoma, a 4K Dell U2723QE monitor,
+            a custom TKD Cycle7 (cream with gold accents) mechanical keyboard
+            with Vertex V1s and GMK Olive. I use some random mouse I found
+            somewhere; I am looking for mouse recommendations.
+          </p>
+          <h3 className="font-generalsans text-lg font-semibold uppercase">
+            Software
+          </h3>
+          <p>
+            I use Neovim tracking HEAD, with the Neovide GUI. My window manager
+            is Yabai and I use skhd. My top bar is SketchyBar and I use gradient
+            borders with JankyBorders. My shell of choice is zsh and I use my
+            own fork of Kitty as my terminal emulator. I use Firefox ESR as my
+            main browser and Skim as my PDF viewer. My keyboard is a custom TKD
+            Cycle7 mechanical keyboard (cream with gold accents) with Vertex V1s
+            and GMK Olive. I use some random mouse I found somewhere; I am
+            looking for mouse recommendations. Here are my{" "}
+            <a className="underline" href="https://github.com/mizlan/dotfiles">
+              dotfiles
+            </a>
+            . My setup is in such a way that I can do my tasks without thinking;
+            this includes usage of my custom{" "}
+            <a
+              className="underline"
+              href="https://youtu.be/66AZCN8Hkj8?si=2FnBLjMD3Gh43gYV"
+            >
+              tab switcher.
+            </a>
+          </p>
         </section>
         <section className="flex flex-col gap-3">
           <h2 className="font-generalsans text-xl font-semibold uppercase">
