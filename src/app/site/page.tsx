@@ -50,8 +50,9 @@ const Site = () => {
           <a className="underline" href="https://www.last.fm/api">
             last.fm API
           </a>{" "}
-          to query my most recently logged song, which for all purposes
-          suffices.
+          to query my most recently logged song, which has the quirk that it
+          only logs a song [after at least half of the song has been
+          played](https://www.last.fm/api/scrobbling). But that's good enough
         </p>
       </section>
     </main>
