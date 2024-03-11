@@ -58,7 +58,7 @@ const Site = () => {
             <a className="underline" href="https://www.last.fm/api/scrobbling">
               after at least half of the song has been played
             </a>
-            . But that's good enough.
+            . But that&apos;s good enough.
           </p>
         </section>
       </main>
