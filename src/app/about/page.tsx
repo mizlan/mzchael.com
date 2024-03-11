@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="flex flex-col items-center ">
-      <main className="mx-10 mb-10 flex flex-col gap-4 sm:w-[35em]">
+    <div className="flex flex-col items-center">
+      <main className="mx-10 mb-10 flex flex-col gap-4 sm:w-[35em] lg:w-[45em] text-justify">
         <section className="flex flex-col gap-3">
           <h1 className="font-generalsans text-3xl font-black uppercase">
             More About Me

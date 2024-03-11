@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Home = async () => {
   return (
-    <main className="flex h-full flex-grow flex-col justify-between px-10 pt-0 md:px-20 md:pt-[14vh] lg:px-32">
+    <main className="flex h-full flex-grow flex-col justify-between px-10 pt-4 sm:pt-[8vh] md:px-20 md:pt-[14vh] lg:px-32">
       <div className="flex flex-col gap-4">
         <h1
           className={`ml-[-0.045em] font-generalsans text-6xl font-black uppercase tracking-wide`}
