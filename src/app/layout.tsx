@@ -49,7 +49,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${font} ${twScreens} flex min-h-screen flex-col bg-day-50 text-night-700 selection:bg-wanBlue-800/30 dark:bg-theme-dark dark:text-day-50 dark:selection:bg-wanBlue-500/30`}
+        className={`${font} ${twScreens} flex min-h-screen flex-col bg-day-50 text-night-700 selection:bg-wanBlue-800/20 dark:bg-theme-dark dark:text-day-50 dark:selection:bg-wanBlue-500/30`}
         style={{}}
       >
         <Providers>
