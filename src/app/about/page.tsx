@@ -60,10 +60,7 @@ const About = () => {
             is Yabai and I use skhd. My top bar is SketchyBar and I use gradient
             borders with JankyBorders. My shell of choice is zsh and I use my
             own fork of Kitty as my terminal emulator. I use Firefox ESR as my
-            main browser and Skim as my PDF viewer. My keyboard is a custom TKD
-            Cycle7 mechanical keyboard (cream with gold accents) with Vertex V1s
-            and GMK Olive. I use some random mouse I found somewhere; I am
-            looking for mouse recommendations. Here are my{" "}
+            main browser and Skim as my PDF viewer. Here are my{" "}
             <a className="underline" href="https://github.com/mizlan/dotfiles">
               dotfiles
             </a>
