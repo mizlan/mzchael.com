@@ -19,15 +19,15 @@ const Home = async () => {
           my{" "}
           <Link
             target="_blank"
-            className="underline underline-offset-2"
-            href="https://github.com/mizlan"
+            className="underline underline-offset-2 hover:bg-rosePearl-400/50"
+            href="https://www.youtube.com/c/mzzzchael"
           >
             YouTube channel
           </Link>{" "}
           where I post videos on occasion; and my{" "}
           <Link
             target="_blank"
-            className="peer underline underline-offset-2"
+            className="peer underline underline-offset-2 hover:bg-rosePearl-400/50"
             href="https://github.com/mizlan"
           >
             GitHub profile
@@ -35,12 +35,12 @@ const Home = async () => {
           where I have some exciting projects! Some of my other hobbies include
           analytic philosophy, a&nbsp;cappella, electric guitar, and crosswords.
           Oh, and I have a{" "}
-          <a
-            className="underline underline-offset-2"
+          <Link
+            className="underline underline-offset-2 hover:bg-rosePearl-400/50"
             href="https://boardgamegeek.com/collection/user/BallOfSalt"
           >
             board game collection
-          </a>
+          </Link>
           .
         </Balancer>
         <RecentTrack />
