@@ -1,3 +1,1 @@
-module.exports = {
-  plugins: ['prettier-plugin-tailwindcss'],
-}
+/annex/objects/SHA256E-s65--e4538a83e7988654ef5e3a7adc5462d1393797395bd45f07311dd498c1b6a39a.js

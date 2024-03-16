@@ -1,7 +1,1 @@
-module.exports = {
-  plugins: {
-    'tailwindcss/nesting': {},
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+/annex/objects/SHA256E-s113--74251e2f936704f35bad7598199d803c98e25c0af2fb83458c713d1f3b617e81.js

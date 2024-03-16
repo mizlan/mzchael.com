@@ -1,12 +1,1 @@
-const withMDX = require('@next/mdx')()
- 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  reactStrictMode: true,
-  experimental: {
-    mdxRs: true,
-  },
-}
-
-module.exports = withMDX(nextConfig)
+/annex/objects/SHA256E-s267--018d6aa1357cad2fa38ff13c6eedebb459b29ec8aab02d81c9064c23689e4bcf.js

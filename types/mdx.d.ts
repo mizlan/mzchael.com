@@ -1,4 +1,1 @@
-declare module '*.mdx' {
-  let MDXComponent: (props) => JSX.Element;
-  export default MDXComponent;
-}
+/annex/objects/SHA256E-s102--0b5b2127942f17fa39ca47b54d59dce8a97fabe543cf86957fcd0516e5c8e79e.d.ts
