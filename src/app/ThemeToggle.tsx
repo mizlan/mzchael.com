@@ -1,6 +1,8 @@
 "use client";
 
-import { Sun, SunHorizon, MoonStars } from "@phosphor-icons/react";
+import { Sun } from "@phosphor-icons/react/dist/ssr/Sun";
+import { SunHorizon } from "@phosphor-icons/react/dist/ssr/SunHorizon";
+import { MoonStars } from "@phosphor-icons/react/dist/ssr/MoonStars";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import { useEffect, useState } from "react";
