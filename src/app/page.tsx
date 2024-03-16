@@ -19,7 +19,7 @@ const Home = async () => {
           my{" "}
           <Link
             target="_blank"
-            className="underline underline-offset-2 hover:bg-rosePearl-400/50"
+            className="underline underline-offset-2 hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30"
             href="https://www.youtube.com/c/mzzzchael"
           >
             YouTube channel
@@ -27,7 +27,7 @@ const Home = async () => {
           where I post videos on occasion; and my{" "}
           <Link
             target="_blank"
-            className="peer underline underline-offset-2 hover:bg-rosePearl-400/50"
+            className="peer underline underline-offset-2 hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30"
             href="https://github.com/mizlan"
           >
             GitHub profile
@@ -36,7 +36,7 @@ const Home = async () => {
           analytic philosophy, a&nbsp;cappella, electric guitar, and crosswords.
           Oh, and I have a{" "}
           <Link
-            className="underline underline-offset-2 hover:bg-rosePearl-400/50"
+            className="underline underline-offset-2 hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30"
             href="https://boardgamegeek.com/collection/user/BallOfSalt"
           >
             board game collection

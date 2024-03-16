@@ -18,7 +18,7 @@ const NavItem = ({
   return (
     <NavigationMenu.Item className="mb-1.5 flex flex-row items-center gap-1 md:mb-0">
       <NavigationMenu.Link
-        className="after:block after:h-0.5 focus:text-rosePearl-900 dark:focus:text-rosePearl-300"
+        className="after:content-[''] after:block after:h-0.5 focus:text-rosePearl-900 dark:focus:text-rosePearl-300"
         asChild
       >
         <Link

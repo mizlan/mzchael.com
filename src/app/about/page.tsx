@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const About = () => {
   return (
     <div className="flex flex-col items-center">
@@ -28,7 +30,7 @@ const About = () => {
             projects I use (see my GitHub for contribution activity), and I am
             also an open-source maintainer, with my most notable open-source
             project being{" "}
-            <a href="https://github.com/mizlan/iswap.nvim">iswap.nvim</a>, an
+            <a href="https://github.com/mizlan/iswap.nvim" className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30">iswap.nvim</a>, an
             interactive refactoring tool for the Neovim text editor.
           </p>
           <p>
@@ -61,17 +63,17 @@ const About = () => {
             borders with JankyBorders. My shell of choice is zsh and I use my
             own fork of Kitty as my terminal emulator. I use Firefox ESR as my
             main browser and Skim as my PDF viewer. Here are my{" "}
-            <a className="underline" href="https://github.com/mizlan/dotfiles">
+            <Link className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30" href="https://github.com/mizlan/dotfiles">
               dotfiles
-            </a>
+            </Link>
             . My setup is in such a way that I can do my tasks without thinking;
             this includes usage of my custom{" "}
-            <a
-              className="underline"
+            <Link
+              className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30"
               href="https://youtu.be/66AZCN8Hkj8?si=2FnBLjMD3Gh43gYV"
             >
               tab switcher.
-            </a>
+            </Link>
           </p>
         </section>
         <section className="flex flex-col gap-3">
