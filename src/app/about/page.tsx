@@ -42,7 +42,7 @@ const About = () => {
         </section>
         <section className="flex flex-col gap-3">
           <h2 className="font-generalsans text-xl font-semibold uppercase">
-            My Coveted Setup
+            My Setup
           </h2>
           <p>I have been asked by multiple people to share my setup.</p>
           <h3 className="font-generalsans text-lg font-semibold uppercase">
