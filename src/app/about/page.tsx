@@ -3,19 +3,19 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="flex flex-col items-center">
-      <main className="mx-10 mb-10 flex flex-col gap-4 sm:w-[35em] lg:w-[45em] text-justify">
+      <main className="mx-10 mb-10 flex flex-col gap-4 text-justify sm:w-[35em] lg:w-[45em]">
         <section className="flex flex-col gap-3">
           <h1 className="font-generalsans text-3xl font-black uppercase">
             More About Me
           </h1>
           <p>
-            I&apos;m a second-year at UCLA majoring in computer science and
+            I&apos;m a third-year at UCLA majoring in computer science and
             minoring in philosophy. My research interests include functional
             programming, programming language design, formal verification, and
             compilers.
           </p>
           <p>
-            I also love software engineering&#8212;I enjoy developing with
+            I also love software engineering and enjoy developing with
             technologies such as modern TypeScript (React), modern C++, OCaml,
             Haskell, and Clojure.
           </p>
@@ -30,8 +30,13 @@ const About = () => {
             projects I use (see my GitHub for contribution activity), and I am
             also an open-source maintainer, with my most notable open-source
             project being{" "}
-            <a href="https://github.com/mizlan/iswap.nvim" className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30">iswap.nvim</a>, an
-            interactive refactoring tool for the Neovim text editor.
+            <a
+              href="https://github.com/mizlan/iswap.nvim"
+              className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30"
+            >
+              iswap.nvim
+            </a>
+            , an interactive refactoring tool for the Neovim text editor.
           </p>
           <p>
             In my second year at UCLA, I was also the maintainer of the UCLA ACM
@@ -44,26 +49,17 @@ const About = () => {
           <h2 className="font-generalsans text-xl font-semibold uppercase">
             My Setup
           </h2>
-          <p>I have been asked by multiple people to share my setup.</p>
-          <h3 className="font-generalsans text-lg font-semibold uppercase">
-            Hardware
-          </h3>
           <p>
-            I use a 2021 MacBook Pro running Sonoma, a 4K Dell U2723QE monitor,
-            a custom TKD Cycle7 (cream with gold accents) mechanical keyboard
-            with Vertex V1s and GMK Olive. I use some random mouse I found
-            somewhere; I am looking for mouse recommendations.
-          </p>
-          <h3 className="font-generalsans text-lg font-semibold uppercase">
-            Software
-          </h3>
-          <p>
-            I use Neovim tracking HEAD, with the Neovide GUI. My window manager
-            is Yabai and I use skhd. My top bar is SketchyBar and I use gradient
-            borders with JankyBorders. My shell of choice is zsh and I use my
-            own fork of Kitty as my terminal emulator. I use Firefox ESR as my
-            main browser and Skim as my PDF viewer. Here are my{" "}
-            <Link className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30" href="https://github.com/mizlan/dotfiles">
+            I use a 2021 MacBook Pro, a 4K Dell monitor, a Cycle7 with Vertex
+            V1s and GMK Olive, and a Logitech GPX. I use Neovim tracking HEAD,
+            with the Neovide GUI. My window manager is Yabai and I use skhd,
+            SketchyBar, and JankyBorders. My shell of choice is zsh and I use my
+            own fork of Kitty as my terminal emulator. I use Firefox as my main
+            browser and Skim as my PDF viewer. Here are my{" "}
+            <Link
+              className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30"
+              href="https://github.com/mizlan/dotfiles"
+            >
               dotfiles
             </Link>
             . My setup is in such a way that I can do my tasks without thinking;

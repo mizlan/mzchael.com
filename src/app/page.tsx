@@ -14,7 +14,7 @@ const Home = async () => {
           Michael Lan
         </h1>
         <Balancer className="sm:w-[60vw]">
-          I&apos;m a second-year studying computer science at UCLA, and I love
+          I&apos;m a third-year studying computer science at UCLA, and I love
           open source, functional programming, and the Neovim ecosystem. Visit
           my{" "}
           <Link
