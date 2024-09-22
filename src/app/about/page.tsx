@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const About = () => {
   return (
     <div className="flex flex-col items-center">
@@ -44,33 +42,6 @@ const About = () => {
             used by ACM TeachLA to teach kids how to program!
           </p>
           <p>Yeah. I&apos;m just really into text editors, it seems :)</p>
-        </section>
-        <section className="flex flex-col gap-3">
-          <h2 className="font-generalsans text-xl font-semibold uppercase">
-            My Setup
-          </h2>
-          <p>
-            I use a 2021 MacBook Pro, a 4K Dell monitor, a Cycle7 with Vertex
-            V1s and GMK Olive, and a Logitech GPX. I use Neovim tracking HEAD,
-            with the Neovide GUI. My window manager is Yabai and I use skhd,
-            SketchyBar, and JankyBorders. My shell of choice is zsh and I use my
-            own fork of Kitty as my terminal emulator. I use Firefox as my main
-            browser and Skim as my PDF viewer. Here are my{" "}
-            <Link
-              className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30"
-              href="https://github.com/mizlan/dotfiles"
-            >
-              dotfiles
-            </Link>
-            . My setup is in such a way that I can do my tasks without thinking;
-            this includes usage of my custom{" "}
-            <Link
-              className="underline hover:bg-rosePearl-400/50 dark:hover:bg-rosePearl-900/30"
-              href="https://youtu.be/66AZCN8Hkj8?si=2FnBLjMD3Gh43gYV"
-            >
-              tab switcher.
-            </Link>
-          </p>
         </section>
         <section className="flex flex-col gap-3">
           <h2 className="font-generalsans text-xl font-semibold uppercase">
