@@ -1,7 +1,7 @@
 const Site = () => {
   return (
     <div className="flex flex-col items-center">
-      <main className="mx-10 mb-10 flex flex-col gap-4 sm:w-[35em] lg:w-[45em] text-justify">
+      <main className="mx-10 mb-10 flex flex-col gap-4 text-justify sm:w-[35em] lg:w-[45em]">
         <section className="flex flex-col gap-3">
           <h1 className="font-generalsans text-3xl font-black uppercase">
             About This Site
@@ -54,11 +54,8 @@ const Site = () => {
               last.fm API
             </a>{" "}
             to query my most recently logged song, which has the quirk that it
-            only logs a song{" "}
-            <a className="underline" href="https://www.last.fm/api/scrobbling">
-              after at least half of the song has been played
-            </a>
-            . But that&apos;s good enough.
+            only logs a song after at least half of the song has been played.
+            But that&apos;s good enough.
           </p>
         </section>
       </main>

@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="flex flex-col items-center">
-      <main className="mx-10 mb-10 flex flex-col gap-4 text-justify sm:w-[35em] lg:w-[45em]">
+      <main className="mx-10 mb-10 flex flex-col gap-4 sm:w-[35em] lg:w-[45em]">
         <section className="flex flex-col gap-3">
           <h1 className="font-generalsans text-3xl font-black uppercase">
             More About Me
@@ -9,13 +9,17 @@ const About = () => {
           <p>
             I&apos;m a third-year at UCLA majoring in computer science and
             minoring in philosophy. My research interests include functional
-            programming, programming language design, formal verification, and
-            compilers.
+            programming, formal verification, programming language design,
+            compilers, concurrent programming, and distributed systems.
           </p>
           <p>
-            I also love software engineering and enjoy developing with
-            technologies such as modern TypeScript (React), modern C++, OCaml,
-            Haskell, and Clojure.
+            I also love software engineering and enjoy developing with modern
+            technologies, with an emphasis on C++20, OCaml, and Haskell. I also
+            am experienced with React and TypeScript on the frontend. I
+            previously interned at Pure Storage, where I worked on FlashBlade
+            data mobility in C++. I'm an incoming intern at Tesla this winter
+            where I'll be writing Haskell, and Jane Street this summer where
+            I'll be writing OCaml.
           </p>
         </section>
         <section className="flex flex-col gap-3">
@@ -41,7 +45,6 @@ const About = () => {
             TeachLA Editor, an open-source, full-stack kid-friendly text editor
             used by ACM TeachLA to teach kids how to program!
           </p>
-          <p>Yeah. I&apos;m just really into text editors, it seems :)</p>
         </section>
         <section className="flex flex-col gap-3">
           <h2 className="font-generalsans text-xl font-semibold uppercase">
