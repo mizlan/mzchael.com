@@ -9,7 +9,7 @@ const Home = async () => {
     <main className="flex h-full flex-grow flex-col justify-between px-10 pt-4 sm:pt-[8vh] md:px-20 md:pt-[14vh] lg:px-32">
       <div className="flex flex-col gap-4">
         <h1
-          className={`ml-[-0.045em] font-generalsans text-3xl md:text-6xl font-black uppercase tracking-wide`}
+          className={`ml-[-0.045em] font-generalsans text-3xl md:text-6xl font-semibold md:font-black uppercase tracking-wide`}
         >
           Michael Lan
         </h1>
