@@ -3,22 +3,23 @@
 @tailwind utilities;
 
 body {
-  background-image: url("/topography.svg");
+  /* background-image: url("/topography.svg"); */
 }
 
 .sig {
   @apply sig-light;
 }
 
-.dark .sig {
-  @apply sig-dark;
-}
-
+/* .dark .sig { */
+/*   @apply sig-dark; */
+/* } */
+/**/
 @layer components {
   .sig-dark {
     filter: invert(95%) sepia(13%) saturate(552%) hue-rotate(304deg) brightness(104%) contrast(90%);
   }
   .sig-light {
-    filter: invert(23%) sepia(5%) saturate(1913%) hue-rotate(251deg) brightness(86%) contrast(86%);
+    filter: invert(100%) opacity(0.9);
+    /* filter: invert(23%) sepia(5%) saturate(1913%) hue-rotate(251deg) brightness(86%) contrast(86%); */
   }
 }

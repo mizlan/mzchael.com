@@ -36,16 +36,16 @@ const ThemeOption = ({
   }
 
   const twItemClassName = `
-    bg-day-50/30
-    data-[state=on]:bg-day-50/80
-    dark:bg-night-700/30
-    dark:data-[state=on]:bg-night-700/80
+    bg-white/5
+    data-[state=on]:bg-white/10
+    dark:bg-white/5
+    dark:data-[state=on]:bg-white/10
   `.trim();
   const twIconClassName = `
-    fill-rosePearl-700
-    group-data-[state=on]:fill-rosePearl-800
-    dark:fill-rosePearl-600
-    dark:group-data-[state=on]:fill-rosePearl-300
+    fill-white/40
+    group-data-[state=on]:fill-white
+    dark:fill-white/40
+    dark:group-data-[state=on]:fill-white
   `.trim();
 
   return (
@@ -64,11 +64,12 @@ const ThemeOption = ({
       </Tooltip.Trigger>
       <Tooltip.Portal>
         <Tooltip.Content
-          className={`rounded-md bg-rosePearl-700/5 px-2 py-1 font-inter text-xs text-rosePearl-800 dark:text-rosePearl-600`}
+          className={`rounded-md bg-white/10 px-2 py-1 font-sans text-xs text-white/70 dark:text-white/70`}
+          side="bottom"
           sideOffset={5}
         >
           {toolTip}
-          <Tooltip.Arrow className="fill-rosePearl-700/5" />
+          <Tooltip.Arrow className="fill-white/10" />
         </Tooltip.Content>
       </Tooltip.Portal>
     </Tooltip.Root>
@@ -85,7 +86,7 @@ const ThemeToggle = () => {
 
   return (
     <ToggleGroup.Root
-      className="inline-flex rounded-[0.53em] bg-day-100/20 p-[1px] shadow-sm dark:bg-night-700/20"
+      className="inline-flex rounded-[0.55rem] bg-white/5 p-[0.05rem] dark:bg-white/5"
       type="single"
       disabled={!mounted}
       value={!mounted ? undefined : theme}

@@ -4,11 +4,11 @@ import Link from "next/link";
 const Posts = async () => {
   const postMetadatas = await getAllPostMetadatas();
   return (
-    <main className="mb-10 flex flex-col gap-5 px-10 sm:px-[15vw] lg:px-[30vw]">
+    <main className="space-y-4">
       {postMetadatas.map(({ slug, link, description, title, date }) => (
         <div key={slug}>
           <Link
-            className="font-generalsans text-xl font-semibold uppercase"
+            className="font-sans text-xl font-semibold"
             href={link}
           >
             {title}

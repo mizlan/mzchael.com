@@ -16,16 +16,16 @@ const NavItem = ({
   const isActive = slug === "" ? segment === null : slug === segment;
 
   return (
-    <NavigationMenu.Item className="mb-1.5 flex flex-row items-center gap-1 md:mb-0">
+    <NavigationMenu.Item className="flex flex-row items-center gap-1">
       <NavigationMenu.Link
-        className="after:content-[''] after:block after:h-0.5 focus:text-rosePearl-900 dark:focus:text-rosePearl-300"
+        className="after:content-[''] after:block after:h-0.5 focus:text-white dark:focus:text-white"
         asChild
       >
         <Link
           className={
             isActive
-              ? `text-rosePearl-900 after:w-full after:bg-rosePearl-900 dark:text-rosePearl-300 dark:after:bg-rosePearl-300`
-              : `text-rosePearl-700 after:w-0 after:bg-rosePearl-700 after:transition-[width] after:duration-500 hover:after:w-full focus:after:bg-rosePearl-900 dark:text-rosePearl-600 dark:after:bg-rosePearl-600 dark:focus:after:bg-rosePearl-300`
+              ? `text-white after:w-full after:bg-white dark:text-white dark:after:bg-white`
+              : `text-white/40 after:w-0 after:bg-white/40 after:transition-[width] after:duration-500 hover:after:w-full focus:after:bg-white dark:text-white/40 dark:after:bg-white/40 dark:focus:after:bg-white`
           }
           href={href}
         >

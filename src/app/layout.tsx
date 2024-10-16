@@ -44,12 +44,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${generalSans.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      className={`font-sans ${jetbrainsMono.variable}`}
       style={{ scrollbarGutter: "stable" }}
       suppressHydrationWarning
     >
       <body
-        className={`${font} ${twScreens} flex min-h-screen flex-col bg-day-50 text-night-700 selection:bg-wanBlue-800/20 dark:bg-theme-dark dark:text-day-50 dark:selection:bg-wanBlue-500/30`}
+        className={`${font} ${twScreens} mx-auto flex min-h-screen max-w-[60ch] px-8 py-4 flex-col bg-yellow-600 text-white selection:bg-wanBlue-800/20 dark:bg-indigo-950 dark:text-day-50 dark:selection:bg-wanBlue-500/30`}
         style={{}}
       >
         <Providers>
