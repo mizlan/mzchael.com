@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* background-image: url("/topography.svg"); */
+@media (min-width: 640px) {
+  body {
+    background-image: url("/topography-light.svg");
+  }
+
+  .dark body {
+    background-image: url("/topography-dark.svg");
+  }
 }
 
 .sig {
