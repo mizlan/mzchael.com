@@ -1,5 +1,4 @@
 import "./globals.css";
-import localFont from "next/font/local";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Providers from "./Providers";
 import Navigation from "./Navigation";
@@ -13,19 +12,6 @@ const inter = Inter({
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrainsmono",
-});
-
-const generalSans = localFont({
-  src: [
-    {
-      path: "../../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Variable.woff2",
-    },
-    {
-      path: "../../public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-VariableItalic.woff2",
-      style: "italic",
-    },
-  ],
-  variable: "--font-generalsans",
 });
 
 export const metadata = {

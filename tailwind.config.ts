@@ -89,7 +89,6 @@ const config : Config = {
         },
       },
       fontFamily: {
-        generalsans: "var(--font-generalsans)",
         inter: "var(--font-inter)",
         jetbrainsmono: "var(--font-jetbrainsmono)",
       },
