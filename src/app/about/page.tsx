@@ -2,7 +2,7 @@ const About = () => {
   return (
     <main className="space-y-4">
       <section className="space-y-3">
-        <h1 className="font-sans text-xl font-semibold">More About Me</h1>
+        <h1 className="text-xl font-semibold">More About Me</h1>
         <p>
           My hobbies include analytic philosophy, a cappella, electric guitar,
           and crosswords. I also have a{" "}
@@ -16,7 +16,7 @@ const About = () => {
         </p>
       </section>
       <section className="space-y-3">
-        <h2 className="font-sans text-xl font-semibold">Open Source</h2>
+        <h2 className="text-xl font-semibold">Open Source</h2>
         <p>
           I am a big advocate of open-source software and the free software
           philosophy. I am an avid open-source contributor and maintainer, with
@@ -36,7 +36,7 @@ const About = () => {
         </p>
       </section>
       <section className="space-y-3">
-        <h2 className="font-sans text-xl font-semibold">
+        <h2 className="text-xl font-semibold">
           Reach Out!
         </h2>
         <p>

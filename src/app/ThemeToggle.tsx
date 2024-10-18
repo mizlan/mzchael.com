@@ -64,7 +64,7 @@ const ThemeOption = ({
       </Tooltip.Trigger>
       <Tooltip.Portal>
         <Tooltip.Content
-          className={`rounded-md bg-white/10 px-2 py-1 font-sans text-xs text-white/70 dark:text-white/70`}
+          className={`rounded-md bg-white/10 px-2 py-1 text-xs text-white/70 dark:text-white/70`}
           side="bottom"
           sideOffset={5}
         >

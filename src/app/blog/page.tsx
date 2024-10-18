@@ -8,7 +8,7 @@ const Posts = async () => {
       {postMetadatas.map(({ slug, link, description, title, date }) => (
         <div key={slug}>
           <Link
-            className="font-sans text-xl font-semibold"
+            className="text-xl font-semibold"
             href={link}
           >
             {title}

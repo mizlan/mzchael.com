@@ -24,18 +24,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const font = inter.className;
   const twScreens =
     process.env.NODE_ENV === "development" ? "debug-screens" : "";
   return (
     <html
       lang="en"
-      className={`font-sans ${jetbrainsMono.variable}`}
-      style={{ scrollbarGutter: "stable" }}
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
+      style={{
+        scrollbarGutter: "stable",
+        fontFamily: "-apple-system, BlinkMacSystemFont, var(--font-inter)",
+      }}
       suppressHydrationWarning
     >
       <body
-        className={`${font} ${twScreens} mx-auto flex min-h-screen max-w-[60ch] px-8 py-4 flex-col bg-yellow-600 text-white selection:bg-wanBlue-800/20 dark:bg-indigo-950 dark:text-day-50 dark:selection:bg-wanBlue-500/30`}
+        className={`${twScreens} mx-auto flex min-h-screen max-w-[60ch] flex-col bg-yellow-600 px-8 py-4 text-white selection:bg-slate-500/30 dark:bg-sky-950`}
         style={{}}
       >
         <Providers>
