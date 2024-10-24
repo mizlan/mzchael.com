@@ -36,14 +36,14 @@ const ThemeOption = ({
   }
 
   const twItemClassName = `
-    bg-white/5
+    bg-transparent
     data-[state=on]:bg-white/10
     dark:bg-white/5
     dark:data-[state=on]:bg-white/10
   `.trim();
   const twIconClassName = `
-    fill-white/40
-    group-data-[state=on]:fill-white
+    fill-indigo-500
+    group-data-[state=on]:fill-indigo-700
     dark:fill-white/40
     dark:group-data-[state=on]:fill-white
   `.trim();
@@ -86,7 +86,7 @@ const ThemeToggle = () => {
 
   return (
     <ToggleGroup.Root
-      className="inline-flex rounded-[0.55rem] bg-white/5 p-[0.05rem] dark:bg-white/5"
+      className="inline-flex rounded-[0.55rem] p-[0.05rem] dark:bg-white/5"
       type="single"
       disabled={!mounted}
       value={!mounted ? undefined : theme}

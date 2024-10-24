@@ -46,12 +46,12 @@ const RecentTrack = () => {
   if (!data) return null;
 
   return (
-    <Balancer className="text-sm text-white/50">
+    <Balancer className="font-inter text-sm text-indigo-500 dark:text-white/50">
       {data.isPlaying
         ? "Michael is currently listening to "
         : "Michael most recently listened to "}
       <a
-        className="text-white/70 underline underline-offset-2"
+        className="text-indigo-700 dark:text-white/70 underline underline-offset-2"
         href={data.songUrl}
       >
         {data.title}

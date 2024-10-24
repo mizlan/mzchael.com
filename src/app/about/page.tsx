@@ -1,3 +1,5 @@
+import Link from "@/app/Link";
+
 const About = () => {
   return (
     <main className="space-y-4">
@@ -6,12 +8,9 @@ const About = () => {
         <p>
           My hobbies include analytic philosophy, a cappella, electric guitar,
           and crosswords. I also have a{" "}
-          <a
-            href="https://boardgamegeek.com/collection/user/BallOfSalt"
-            className="underline underline-offset-2 hover:bg-white/10"
-          >
+          <Link href="https://boardgamegeek.com/collection/user/BallOfSalt">
             board game collection
-          </a>
+          </Link>
           .
         </p>
       </section>
@@ -21,13 +20,8 @@ const About = () => {
           I am a big advocate of open-source software and the free software
           philosophy. I am an avid open-source contributor and maintainer, with
           my most notable open-source project being{" "}
-          <a
-            href="https://github.com/mizlan/iswap.nvim"
-            className="underline underline-offset-2 hover:bg-white/10"
-          >
-            iswap.nvim
-          </a>
-          , an interactive refactoring tool for the Neovim text editor.
+          <Link href="https://github.com/mizlan/iswap.nvim">iswap.nvim</Link>,
+          an interactive refactoring tool for the Neovim text editor.
         </p>
         <p>
           In my second year at UCLA, I was also the maintainer of the UCLA ACM
@@ -36,9 +30,7 @@ const About = () => {
         </p>
       </section>
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">
-          Reach Out!
-        </h2>
+        <h2 className="text-xl font-semibold">Reach Out!</h2>
         <p>
           I&apos;d love to talk with you about anything! Reach me at michaellan
           AT ucla DOT edu. It might take a few days for me to respond.
