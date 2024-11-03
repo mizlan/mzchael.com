@@ -1,6 +1,7 @@
 import Balancer from "react-wrap-balancer";
 import RecentTrack from "./RecentTrack";
 import Image from "next/image";
+import Heading from "@/app/Heading";
 import Link from "@/app/Link";
 import sig from "../../public/sig.png";
 
@@ -8,7 +9,7 @@ const Home = async () => {
   return (
     <main className="flex h-full flex-grow flex-col justify-between">
       <div className="flex flex-col gap-4">
-        <h1 className={`text-xl font-medium`}>Michael Lan</h1>
+        <Heading>Michael Lan</Heading>
         <Balancer className="">
           I'm a computer science student at UCLA minoring in philosophy. When I
           have time, I{" "}
@@ -28,7 +29,7 @@ const Home = async () => {
           className="sig"
           width={120}
         />
-        <footer className="text-xs text-indigo-500 dark:text-white/40">
+        <footer className="text-xs text-stone-600 dark:text-white/40">
           &copy; 2024 Michael Lan
         </footer>
       </div>

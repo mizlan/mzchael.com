@@ -36,14 +36,14 @@ const ThemeOption = ({
   }
 
   const twItemClassName = `
-    bg-transparent
-    data-[state=on]:bg-white/10
+    bg-stone-200/20
+    data-[state=on]:bg-stone-200/50
     dark:bg-white/5
     dark:data-[state=on]:bg-white/10
   `.trim();
   const twIconClassName = `
-    fill-indigo-500
-    group-data-[state=on]:fill-indigo-700
+    fill-stone-300
+    group-data-[state=on]:fill-stone-400
     dark:fill-white/40
     dark:group-data-[state=on]:fill-white
   `.trim();

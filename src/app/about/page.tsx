@@ -1,13 +1,14 @@
+import Heading from "@/app/Heading";
 import Link from "@/app/Link";
 
 const About = () => {
   return (
     <main className="space-y-4">
       <section className="space-y-3">
-        <h1 className="text-xl font-semibold">More About Me</h1>
+        <Heading>More About Me</Heading>
         <p>
-          My hobbies include analytic philosophy, a cappella, electric guitar,
-          and crosswords. I also have a{" "}
+          My hobbies include analytic philosophy, a&nbsp;cappella, electric
+          guitar, poker, and crosswords. I also have a{" "}
           <Link href="https://boardgamegeek.com/collection/user/BallOfSalt">
             board game collection
           </Link>
@@ -15,7 +16,7 @@ const About = () => {
         </p>
       </section>
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">Open Source</h2>
+        <Heading>Open Source</Heading>
         <p>
           I am a big advocate of open-source software and the free software
           philosophy. I am an avid open-source contributor and maintainer, with
@@ -30,7 +31,7 @@ const About = () => {
         </p>
       </section>
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">Reach Out!</h2>
+        <Heading>Reach Out!</Heading>
         <p>
           I&apos;d love to talk with you about anything! Reach me at michaellan
           AT ucla DOT edu. It might take a few days for me to respond.

@@ -9,7 +9,7 @@ const SiteLink = ({ href, children }: SiteLinkProps) => {
   return (
     <Link
       target="_blank"
-      className="underline decoration-indigo-500 underline-offset-2 hover:bg-indigo-100 dark:decoration-current dark:hover:bg-white/10"
+      className="underline decoration-amber-500 underline-offset-2 hover:bg-yellow-500/20 dark:decoration-current dark:hover:bg-white/10"
       href={href}
     >
       {children}
