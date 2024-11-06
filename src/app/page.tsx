@@ -29,7 +29,7 @@ const Home = async () => {
           className="sig"
           width={120}
         />
-        <footer className="text-xs text-stone-600 dark:text-white/40">
+        <footer className="text-xs text-slate-400 dark:text-white/40">
           &copy; 2024 Michael Lan
         </footer>
       </div>

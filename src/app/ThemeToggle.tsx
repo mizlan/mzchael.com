@@ -36,14 +36,14 @@ const ThemeOption = ({
   }
 
   const twItemClassName = `
-    bg-stone-200/20
-    data-[state=on]:bg-stone-200/50
+    bg-slate-200/20
+    data-[state=on]:bg-slate-200/50
     dark:bg-white/5
     dark:data-[state=on]:bg-white/10
   `.trim();
   const twIconClassName = `
-    fill-stone-300
-    group-data-[state=on]:fill-stone-400
+    fill-slate-300
+    group-data-[state=on]:fill-slate-500
     dark:fill-white/40
     dark:group-data-[state=on]:fill-white
   `.trim();
@@ -64,12 +64,12 @@ const ThemeOption = ({
       </Tooltip.Trigger>
       <Tooltip.Portal>
         <Tooltip.Content
-          className={`rounded-md bg-white/10 px-2 py-1 text-xs text-white/70 dark:text-white/70`}
+          className={`rounded-md bg-slate-100 px-2 py-1 text-xs text-slate-400 dark:bg-white/10 dark:text-white/70`}
           side="bottom"
           sideOffset={5}
         >
           {toolTip}
-          <Tooltip.Arrow className="fill-white/10" />
+          <Tooltip.Arrow className="fill-slate-100 dark:fill-white/10" />
         </Tooltip.Content>
       </Tooltip.Portal>
     </Tooltip.Root>
