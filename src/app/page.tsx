@@ -15,10 +15,10 @@ const Home = async () => {
           have time, I{" "}
           <Link href="https://www.youtube.com/c/mzzzchael">make videos</Link>{" "}
           and <Link href="https://github.com/mizlan">write code</Link>. My
-          research interests include functional programming (Haskell, OCaml),
-          formal methods (Coq, Lean), compilers, concurrent programming, and
-          distributed systems. I previously interned at Pure Storage, and I'm an
-          incoming intern at Tesla this winter and at Jane Street this summer.
+          research interests include functional programming, formal methods,
+          compilers, and distributed systems. I previously interned at Pure
+          Storage, and I'm an incoming intern at Tesla this winter and at Jane
+          Street this summer.
         </Balancer>
         <RecentTrack />
       </div>
