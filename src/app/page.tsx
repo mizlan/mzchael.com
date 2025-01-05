@@ -11,14 +11,14 @@ const Home = async () => {
       <div className="flex flex-col gap-4">
         <Heading>Michael Lan</Heading>
         <Balancer className="">
-          I'm a computer science student at UCLA minoring in philosophy. When I
+          I&apos;m a computer science student at UCLA minoring in philosophy. When I
           have time, I{" "}
           <Link href="https://www.youtube.com/c/mzzzchael">make videos</Link>{" "}
           and <Link href="https://github.com/mizlan">write code</Link>. My
           research interests include functional programming, formal methods,
           compilers, and distributed systems. I previously interned at Pure
-          Storage, and I'm an incoming intern at Tesla this winter and at Jane
-          Street this summer.
+          Storage, and I&apos;m an incoming intern at Tesla this winter and at
+          Jane Street this summer.
         </Balancer>
         <RecentTrack />
       </div>

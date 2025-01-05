@@ -1,12 +1,14 @@
 import { PostMetadataSchema } from "@/lib/posts";
 
 type PostProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 const Post = async ({ params }: PostProps) => {
+  const { slug } = await params;
+
   const { meta, default: Component } = await import(
-    `../../../posts/${params.slug}.mdx`
+    `../../../posts/${slug}.mdx`
   );
 
   const parsedMeta = PostMetadataSchema.parse(meta);
