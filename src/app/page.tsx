@@ -30,7 +30,7 @@ const Home = async () => {
           width={120}
         />
         <footer className="text-xs text-slate-400 dark:text-white/40">
-          &copy; 2024 Michael Lan
+          &copy; 2025 Michael Lan
         </footer>
       </div>
     </main>
