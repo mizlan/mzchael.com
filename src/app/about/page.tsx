@@ -18,16 +18,15 @@ const About = () => {
       <section className="space-y-3">
         <Heading>Open Source</Heading>
         <p>
-          I am a big advocate of open-source software and the free software
-          philosophy. I am an avid open-source contributor and maintainer, with
-          my most notable open-source project being{" "}
+          I am an avid open-source contributor and maintainer, with my most
+          notable open-source project being{" "}
           <Link href="https://github.com/mizlan/iswap.nvim">iswap.nvim</Link>,
           an interactive refactoring tool for the Neovim text editor.
         </p>
         <p>
           In my second year at UCLA, I was also the maintainer of the UCLA ACM
-          TeachLA Editor, an open-source, full-stack kid-friendly text editor
-          used by ACM TeachLA to teach kids how to program!
+          TeachLA Editor, an open-source text editor used by ACM TeachLA to
+          teach kids how to program!
         </p>
       </section>
       <section className="space-y-3">

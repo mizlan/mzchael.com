@@ -41,8 +41,6 @@ const RecentTrack = () => {
     keepPreviousData: true,
   });
 
-  // const matches = useMediaQuery("(min-width: 768px)");
-  //
   if (!data) return null;
 
   return (
@@ -51,7 +49,7 @@ const RecentTrack = () => {
         ? "Michael is currently listening to "
         : "Michael most recently listened to "}
       <a
-        className="text-slate-700/90 dark:text-white/70 underline underline-offset-2"
+        className="text-slate-700/90 underline underline-offset-2 dark:text-white/70"
         href={data.songUrl}
       >
         {data.title}

@@ -13,9 +13,7 @@ const Post = async ({ params }: PostProps) => {
   return (
     <article className="">
       <header className="">
-        <h1 className="text-xl font-semibold">
-          {parsedMeta.title}
-        </h1>
+        <h1 className="text-xl font-semibold">{parsedMeta.title}</h1>
         <time
           className="text-md mt-1.5 block opacity-80"
           dateTime={parsedMeta.date}
