@@ -94,7 +94,6 @@ const config : Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-debug-screens")],
 };
 
 export default config
