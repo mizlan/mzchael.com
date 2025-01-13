@@ -37,7 +37,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${twScreens} mx-auto flex min-h-screen max-w-[70ch] flex-col bg-white px-8 py-4 text-black selection:bg-wanBlue-300/40 dark:bg-sky-950 dark:text-white dark:selection:bg-slate-500/30 dark:selection:text-current`}
+        className={`${twScreens} mx-auto flex min-h-screen max-w-[70ch] flex-col bg-white px-8 py-4 text-black selection:bg-wan-blue-300/40 dark:bg-sky-950 dark:text-white dark:selection:bg-slate-500/30 dark:selection:text-current`}
         style={{}}
       >
         <Providers>

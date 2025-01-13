@@ -1,33 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-/* @media (min-width: 640px) { */
-/*   body { */
-/*     background-image: url("/topography-light.svg"); */
-/*   } */
-/**/
-/*   .dark body { */
-/*     background-image: url("/topography-dark.svg"); */
-/*   } */
-/* } */
-/**/
+@variant dark (&:is(.dark *));
 
-.sig {
-  @apply sig-light;
+@theme {
+  --color-wan-blue-300: #b5c1c7;
+
+  --font-inter: var(--font-inter);
+  --font-jetbrainsmono: var(--font-jetbrainsmono);
 }
 
-.dark .sig {
-  @apply sig-dark;
+@utility sig-light {
+  filter: contrast(0.9);
 }
 
-@layer components {
-  .sig-light {
-    filter: contrast(0.9);
+@utility sig-dark {
+  filter: invert(100%) opacity(0.9);
+  /* filter: invert(23%) sepia(5%) saturate(1913%) hue-rotate(251deg) brightness(86%) contrast(86%); */
+}
+
+@layer utilities {
+  @media (min-width: 640px) {
+    body {
+      background-image: url("/topography-light.svg");
+    }
+
+    .dark body {
+      background-image: url("/topography-dark.svg");
+    }
   }
 
-  .sig-dark {
-    filter: invert(100%) opacity(0.9);
-    /* filter: invert(23%) sepia(5%) saturate(1913%) hue-rotate(251deg) brightness(86%) contrast(86%); */
+  .sig {
+    @apply sig-light;
+  }
+
+  .dark .sig {
+    @apply sig-dark;
   }
 }

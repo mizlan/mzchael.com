@@ -7,22 +7,21 @@ import sig from "../../public/sig.png";
 
 const Home = async () => {
   return (
-    <main className="flex h-full flex-grow flex-col justify-between">
+    <main className="flex h-full grow flex-col justify-between">
       <div className="flex flex-col gap-4">
         <Heading>Michael Lan</Heading>
         <Balancer className="">
-          I&apos;m a computer science student at UCLA minoring in philosophy. When I
-          have time, I{" "}
+          I&apos;m a computer science student at UCLA minoring in philosophy.
+          When I have time, I{" "}
           <Link href="https://www.youtube.com/c/mzzzchael">make videos</Link>{" "}
           and <Link href="https://github.com/mizlan">write code</Link>. My
           research interests include functional programming, formal methods,
-          compilers, and distributed systems. I previously interned at Pure
-          Storage, and I&apos;m an incoming intern at Tesla this winter and at
-          Jane Street this summer.
+          compilers, and distributed systems. I am currently interning at Tesla,
+          and I have previously interned at Pure Storage.
         </Balancer>
         <RecentTrack />
       </div>
-      <div className="mb-10 mt-16 space-y-3">
+      <div className="mt-16 mb-10 space-y-3">
         <Image
           src={sig}
           alt="Michael's signature"

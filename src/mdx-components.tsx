@@ -14,7 +14,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </h1>
     ),
     code: ({ children }) => (
-      <code className="rounded-sm bg-rosePearl-700/20 px-1 py-0.5 font-jetbrainsmono text-sm">
+      <code className="rounded-xs font-jetbrainsmono bg-slate-200 px-1 py-0.5 text-sm text-slate-700">
         {children}
       </code>
     ),
