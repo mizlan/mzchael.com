@@ -16,8 +16,8 @@ const Home = async () => {
           <Link href="https://www.youtube.com/c/mzzzchael">make videos</Link>{" "}
           and <Link href="https://github.com/mizlan">write code</Link>. My
           research interests include functional programming, formal methods,
-          compilers, and distributed systems. I am currently interning at Tesla,
-          and I have previously interned at Pure Storage.
+          compilers, and distributed systems. I have previously interned at Pure
+          Storage and Tesla, and I will be interning at Jane Street this summer.
         </Balancer>
         <RecentTrack />
       </div>
