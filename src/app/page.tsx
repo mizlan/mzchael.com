@@ -1,9 +1,9 @@
-import Balancer from "react-wrap-balancer";
-import RecentTrack from "./RecentTrack";
-import Image from "next/image";
 import Heading from "@/app/Heading";
 import Link from "@/app/Link";
+import Image from "next/image";
+import Balancer from "react-wrap-balancer";
 import sig from "../../public/sig.png";
+import RecentTrack from "./RecentTrack";
 
 const Home = async () => {
   return (

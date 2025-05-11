@@ -1,13 +1,15 @@
 "use client";
 
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-import ThemeToggle from "./ThemeToggle";
 import NavItem from "./NavLink";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   return (
     <NavigationMenu.Root
-      className={`mb-16 mt-1 flex flex-row items-center justify-between gap-12 font-medium uppercase tracking-wide md:mt-5 md:items-center`}
+      className={
+        "mb-16 mt-1 flex flex-row items-center justify-between gap-12 font-medium uppercase tracking-wide md:mt-5 md:items-center"
+      }
     >
       <NavigationMenu.List className="flex flex-row items-end justify-end gap-4 text-sm md:gap-7 md:text-base">
         <NavItem href="/">home</NavItem>
