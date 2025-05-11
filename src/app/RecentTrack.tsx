@@ -1,8 +1,8 @@
 "use client";
 
-import { z } from "zod";
 import { Balancer } from "react-wrap-balancer";
 import useSWR from "swr";
+import { z } from "zod";
 
 const RecentTrackResponse = z.object({
   album: z.string(),

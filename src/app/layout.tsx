@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter, JetBrains_Mono } from "next/font/google";
-import Providers from "./Providers";
 import Navigation from "./Navigation";
+import Providers from "./Providers";
 
 const inter = Inter({
   style: ["normal"],

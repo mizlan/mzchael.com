@@ -1,8 +1,8 @@
 "use client";
 
-import { Provider as BalancerProvider } from "react-wrap-balancer";
-import { ThemeProvider } from "next-themes";
 import { Provider as TooltipProvider } from "@radix-ui/react-tooltip";
+import { ThemeProvider } from "next-themes";
+import { Provider as BalancerProvider } from "react-wrap-balancer";
 
 interface Props {
   children: React.ReactNode;

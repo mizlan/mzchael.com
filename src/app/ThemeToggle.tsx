@@ -1,12 +1,12 @@
 "use client";
 
+import { MoonStars } from "@phosphor-icons/react/dist/ssr/MoonStars";
 import { Sun } from "@phosphor-icons/react/dist/ssr/Sun";
 import { SunHorizon } from "@phosphor-icons/react/dist/ssr/SunHorizon";
-import { MoonStars } from "@phosphor-icons/react/dist/ssr/MoonStars";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 import * as Tooltip from "@radix-ui/react-tooltip";
-import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 interface ThemeOptionProps {
   position: "first" | "middle" | "last";
@@ -64,7 +64,9 @@ const ThemeOption = ({
       </Tooltip.Trigger>
       <Tooltip.Portal>
         <Tooltip.Content
-          className={`rounded-md bg-slate-100 px-2 py-1 text-xs text-slate-400 dark:bg-white/10 dark:text-white/70`}
+          className={
+            "rounded-md bg-slate-100 px-2 py-1 text-xs text-slate-400 dark:bg-white/10 dark:text-white/70"
+          }
           side="bottom"
           sideOffset={5}
         >

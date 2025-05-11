@@ -1,8 +1,8 @@
 "use client";
 
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
-import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
 const NavItem = ({
   href,
@@ -24,8 +24,8 @@ const NavItem = ({
         <Link
           className={
             isActive
-              ? `text-black after:w-full after:bg-amber-500 dark:text-white dark:after:bg-white`
-              : `text-slate-400/70 after:w-0 after:bg-current after:transition-[width] after:duration-500 hover:after:w-full focus:after:bg-amber-500 dark:text-white/40 dark:after:bg-white/40 dark:focus:after:bg-white`
+              ? "text-black after:w-full after:bg-amber-500 dark:text-white dark:after:bg-white"
+              : "text-slate-400/70 after:w-0 after:bg-current after:transition-[width] after:duration-500 hover:after:w-full focus:after:bg-amber-500 dark:text-white/40 dark:after:bg-white/40 dark:focus:after:bg-white"
           }
           href={href}
         >
