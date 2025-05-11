@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "tailwindcss-debug-screens";
+
 @variant dark (&:is(.dark *));
 
 @theme {
