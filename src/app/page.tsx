@@ -11,20 +11,13 @@ const Home = async () => {
       <div className="flex flex-col gap-4">
         <Heading>Michael Lan</Heading>
         <Balancer className="">
-          I&apos;m a computer science student at UCLA minoring in philosophy and
-          currently a software engineering intern at Jane Street. I&apos;m also
-          an undergraduate researcher investigating quantum computing,
-          equational reasoning, and formal verification under{" "}
-          <Link href="https://web.cs.ucla.edu/~palsberg/">Jens Palsberg</Link>.
-          My research interests include functional programming, formal methods,
-          type systems, compilers, databases, and distributed systems. When I
-          have time, I{" "}
-          <Link href="https://www.youtube.com/c/mzzzchael">make videos</Link>{" "}
-          and <Link href="https://github.com/mizlan">write code</Link>.
-          Ostensibly, I don&apos;t have much time. Previously, I&apos;ve
-          interned at Pure Storage and Tesla and created a number of open-source
-          projects and instructional videos for the Neovim text editor. I
-          currently, however, use Emacs.
+          I study computer science and philosophy at UCLA, where my research
+          under{" "}
+          <Link href="https://web.cs.ucla.edu/~palsberg/">Jens Palsberg</Link>{" "}
+          involves formal verification, quantum computing, and equational
+          reasoning. My broader research interests include functional
+          programming, formal methods, type systems, databases, and distributed
+          systems.
         </Balancer>
         <RecentTrack />
       </div>
