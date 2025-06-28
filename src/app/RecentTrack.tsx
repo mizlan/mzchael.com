@@ -6,11 +6,11 @@ import { z } from "zod";
 
 const RecentTrackResponse = z.object({
   album: z.string(),
-  albumImageUrl: z.string().url(),
+  albumImageUrl: z.string().url().optional(),
   artist: z.string(),
   device: z.string(),
   isPlaying: z.boolean(),
-  songUrl: z.string().url(),
+  songUrl: z.string().url().optional(),
   title: z.string(),
 });
 
@@ -31,6 +31,7 @@ const postProcess = (data: z.infer<typeof RecentTrackResponse>) => {
 
 const query = async () => {
   const resp = await fetch("https://recenttrack.vercel.app/api/handler");
+  // const resp = await fetch("http://localhost:3000/api/handler");
   const json = await resp.json();
   const data = RecentTrackResponse.parse(json);
   return postProcess(data);
@@ -48,12 +49,18 @@ const RecentTrack = () => {
       {data.isPlaying
         ? "Michael is currently listening to "
         : "Michael most recently listened to "}
-      <a
-        className="text-slate-700/90 underline underline-offset-2 dark:text-white/70"
-        href={data.songUrl}
-      >
-        {data.title}
-      </a>{" "}
+      {data.songUrl === undefined ? (
+        <span className="text-slate-800/90 dark:text-white/70">
+          {data.title}
+        </span>
+      ) : (
+        <a
+          className="text-slate-700/90 underline underline-offset-2 dark:text-white/70"
+          href={data.songUrl}
+        >
+          {data.title}
+        </a>
+      )}{" "}
       by {data.artist}
     </Balancer>
   );
