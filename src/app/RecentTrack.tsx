@@ -4,6 +4,10 @@ import { Balancer } from "react-wrap-balancer";
 import useSWR from "swr";
 import { z } from "zod";
 
+/*
+ * Some fields are optional because they in general might not exist,
+ * e.g. when we are playing a local file
+ */
 const RecentTrackResponse = z.object({
   album: z.string(),
   albumImageUrl: z.string().url().optional(),
@@ -40,6 +44,7 @@ const query = async () => {
 const RecentTrack = () => {
   const { data } = useSWR("track", query, {
     keepPreviousData: true,
+    refreshInterval: 15000,
   });
 
   if (!data) return null;
