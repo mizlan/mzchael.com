@@ -10,15 +10,17 @@ const Home = async () => {
     <main className="flex h-full grow flex-col justify-between">
       <div className="flex flex-col gap-4">
         <Heading>Michael Lan</Heading>
-        <Balancer className="">
+        <p className="">
           I study computer science and philosophy at UCLA, where my research
           under{" "}
-          <Link href="https://web.cs.ucla.edu/~palsberg/">Jens Palsberg</Link>{" "}
-          involves formal verification, quantum computing, and equational
-          reasoning. My broader research interests include functional
-          programming, formal methods, type systems, databases, and distributed
-          systems.
-        </Balancer>
+          <Link href="https://web.cs.ucla.edu/~palsberg/">
+            Jens&nbsp;Palsberg
+          </Link>{" "}
+          involves formal verification and quantum computing. After graduation I
+          plan on returning to Jane Street as a software engineer, having
+          interned there this past summer. Previously, I've interned at Pure
+          Storage and Tesla.
+        </p>
         <RecentTrack />
       </div>
       <div className="mt-16 mb-10 space-y-3">
