@@ -10,11 +10,11 @@ import { z } from "zod";
  */
 const RecentTrackResponse = z.object({
   album: z.string(),
-  albumImageUrl: z.string().url().optional(),
+  albumImageUrl: z.httpUrl().optional(),
   artist: z.string(),
   device: z.string(),
   isPlaying: z.boolean(),
-  songUrl: z.string().url().optional(),
+  songUrl: z.httpUrl().optional(),
   title: z.string(),
 });
 
