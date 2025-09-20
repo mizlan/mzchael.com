@@ -13,15 +13,10 @@ const About = () => {
             board game collection
           </Link>
           . My broader research interests include functional programming, formal
-          methods, type systems, databases, and distributed systems. Some
-          technologies and tools I use and love are: Emacs, an extensible Lisp
-          system, Kitty, a terminal emulator; Neovim, a text editor; Kagi, a
-          search engine; and Typst, a typesetting tool. I would also like to use
-          a Framework laptop, but my current laptop works just fine for now.
-          When I have time, I{" "}
+          methods, type systems, databases, and distributed systems. I use
+          Emacs, Kitty, Neovim, Kagi, and Typst. When I have time, I{" "}
           <Link href="https://www.youtube.com/c/mzzzchael">make videos</Link>{" "}
           and <Link href="https://github.com/mizlan">write code</Link>.
-          Ostensibly, I don&apos;t have much time.
         </p>
       </section>
       <section className="space-y-3">
