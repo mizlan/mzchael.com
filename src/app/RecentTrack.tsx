@@ -34,8 +34,7 @@ const postProcess = (data: z.infer<typeof RecentTrackResponse>) => {
 };
 
 const query = async () => {
-  const resp = await fetch("https://recenttrack.vercel.app/api/handler");
-  // const resp = await fetch("http://localhost:3000/api/handler");
+  const resp = await fetch("/api/track");
   const json = await resp.json();
   const data = RecentTrackResponse.parse(json);
   return postProcess(data);
