@@ -10,14 +10,10 @@ const Home = async () => {
       <div className="flex flex-col gap-4">
         <Heading>Michael Lan</Heading>
         <p className="">
-          I study computer science and philosophy at UCLA. I do research under{" "}
-          <Link href="https://web.cs.ucla.edu/~palsberg/">
-            Jens&nbsp;Palsberg
-          </Link>{" "}
-          involving formal verification and quantum computing. After graduation,
-          I plan on joining Jane Street as a software engineer, having interned
-          there this past summer. Previously, I've interned at Pure Storage and
-          Tesla.
+          I study computer science and philosophy at UCLA with interests in
+          programming language theory and functional programming. Previously,
+          I've interned at Pure&nbsp;Storage and Tesla. After graduation I will
+          be joining Jane&nbsp;Street as a software engineer.
         </p>
         <RecentTrack />
       </div>
