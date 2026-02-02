@@ -49,7 +49,7 @@ const RecentTrack = () => {
   if (!data) return null;
 
   return (
-    <Balancer className="font-inter text-sm text-slate-600/80 dark:text-white/50">
+    <Balancer className="font-light text-sm text-slate-600/80 dark:text-white/50">
       {data.isPlaying
         ? "Michael is currently listening to "
         : "Michael most recently listened to "}

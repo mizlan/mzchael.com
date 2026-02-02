@@ -1,7 +1,12 @@
 import "./globals.css";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Archivo, Inter, JetBrains_Mono } from "next/font/google";
 import Navigation from "./Navigation";
 import Providers from "./Providers";
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  variable: "--font-archivo",
+});
 
 const inter = Inter({
   style: ["normal"],
@@ -29,15 +34,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${archivo.variable} ${inter.variable} ${jetbrainsMono.variable}`}
       style={{
         scrollbarGutter: "stable",
-        fontFamily: "-apple-system, BlinkMacSystemFont, var(--font-inter)",
+        // fontFamily: "-apple-system, BlinkMacSystemFont, var(--font-inter)",
       }}
       suppressHydrationWarning
     >
       <body
-        className={`${twScreens} mx-auto flex min-h-screen max-w-[70ch] flex-col bg-white px-8 py-4 text-black selection:bg-wan-blue-300/40 dark:bg-sky-950 dark:text-white dark:selection:bg-slate-500/30 dark:selection:text-current`}
+        className={`${twScreens} mx-auto flex min-h-screen max-w-[70ch] flex-col bg-white px-8 py-4 text-black selection:bg-wan-blue-300/40 dark:bg-sky-950 dark:text-white dark:selection:bg-slate-500/30 dark:selection:text-current font-archivo`}
         style={{}}
       >
         <Providers>
