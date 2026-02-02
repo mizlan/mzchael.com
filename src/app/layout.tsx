@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Archivo, Inter, JetBrains_Mono } from "next/font/google";
+import BackgroundGlare from "./BackgroundGlare";
 import Navigation from "./Navigation";
 import Providers from "./Providers";
 
@@ -46,6 +47,7 @@ export default function RootLayout({
         style={{}}
       >
         <Providers>
+          <BackgroundGlare />
           <Navigation />
           {children}
         </Providers>
