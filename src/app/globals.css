@@ -2,44 +2,44 @@
 
 @plugin "tailwindcss-debug-screens";
 
-@variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-wan-blue-300: #b5c1c7;
+  --color-wan-blue-300: #b5c1c7;
 
-    --font-archivo: var(--font-archivo);
-    --font-inter: var(--font-inter);
-    --font-jetbrainsmono: var(--font-jetbrainsmono);
+  --font-archivo: var(--font-archivo);
+  --font-inter: var(--font-inter);
+  --font-jetbrainsmono: var(--font-jetbrainsmono);
 }
 
 @utility sig-light {
-    filter: contrast(0.9);
+  filter: contrast(0.9);
 }
 
 @utility sig-dark {
-    filter: invert(100%) opacity(0.9);
-    /* filter: invert(23%) sepia(5%) saturate(1913%) hue-rotate(251deg) brightness(86%) contrast(86%); */
+  filter: invert(100%) opacity(0.9);
+  /* filter: invert(23%) sepia(5%) saturate(1913%) hue-rotate(251deg) brightness(86%) contrast(86%); */
 }
 
 @layer utilities {
-    @media (min-width: 640px) {
-        body {
-            background-image: url("/topography-light.svg");
-            background-attachment: fixed;
-            background-size: 600px 600px;
-            background-position: top left;
-        }
-
-        .dark body {
-            background-image: url("/topography-dark.svg");
-        }
+  @media (min-width: 640px) {
+    body {
+      background-image: url("/topography-light.svg");
+      background-attachment: fixed;
+      background-size: 600px 600px;
+      background-position: top left;
     }
 
-    .sig {
-        @apply sig-light;
+    .dark body {
+      background-image: url("/topography-dark.svg");
     }
+  }
 
-    .dark .sig {
-        @apply sig-dark;
-    }
+  .sig {
+    @apply sig-light;
+  }
+
+  .dark .sig {
+    @apply sig-dark;
+  }
 }
