@@ -1,5 +1,5 @@
-import { getAllPostMetadatas } from "@/lib/posts";
 import Link from "next/link";
+import { getAllPostMetadatas } from "@/lib/posts";
 
 const Posts = async () => {
   const postMetadatas = await getAllPostMetadatas();

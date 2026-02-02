@@ -1,6 +1,5 @@
-import Heading from "@/app/Heading";
-import Link from "@/app/Link";
 import Image from "next/image";
+import Heading from "@/app/Heading";
 import sig from "../../public/sig.png";
 import RecentTrack from "./RecentTrack";
 
@@ -25,7 +24,7 @@ const Home = async () => {
           width={120}
         />
         <footer className="text-xs text-slate-400 dark:text-white/40">
-          &copy; 2025 Michael Lan
+          &copy; 2026 Michael Lan
         </footer>
       </div>
     </main>

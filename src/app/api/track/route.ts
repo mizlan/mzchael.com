@@ -13,7 +13,7 @@ export async function GET() {
     console.error("Failed to fetch recent track:", error);
     return Response.json(
       { error: "Failed to fetch recent track" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
