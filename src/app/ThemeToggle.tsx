@@ -54,7 +54,7 @@ const ThemeOption = ({
         {/* span is a hack: https://github.com/radix-ui/primitives/discussions/560 */}
         <span>
           <ToggleGroup.Item
-            className={`group ${rounding} ${spacing} flex h-7 w-8 items-center justify-center ${twItemClassName}`}
+            className={`group ${rounding} ${spacing} flex h-7 w-8 items-center justify-center cursor-pointer data-[state=on]:cursor-default ${twItemClassName}`}
             value={value}
             aria-label={ariaLabel}
           >
