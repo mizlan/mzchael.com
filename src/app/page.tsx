@@ -7,7 +7,9 @@ const Home = async () => {
   return (
     <main className="flex h-full grow flex-col justify-between">
       <div className="flex flex-col gap-4">
-        <Heading>Michael Lan</Heading>
+        <Heading className="font-instrument-serif text-3xl">
+          Michael Lan
+        </Heading>
         <p className="">
           I study computer science and philosophy at UCLA with interests in
           programming language theory and functional programming. Previously,

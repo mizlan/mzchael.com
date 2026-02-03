@@ -10,6 +10,8 @@
   --font-archivo: var(--font-archivo);
   --font-inter: var(--font-inter);
   --font-jetbrainsmono: var(--font-jetbrainsmono);
+  --font-instrument-serif: var(--font-instrument-serif);
+  --font-outfit: var(--font-outfit);
 }
 
 @utility sig-light {

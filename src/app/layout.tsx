@@ -1,5 +1,11 @@
 import "./globals.css";
-import { Archivo, Inter, JetBrains_Mono } from "next/font/google";
+import {
+  Archivo,
+  Instrument_Serif,
+  Inter,
+  JetBrains_Mono,
+  Outfit,
+} from "next/font/google";
 import BackgroundGlare from "./BackgroundGlare";
 import Navigation from "./Navigation";
 import Providers from "./Providers";
@@ -20,6 +26,17 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrainsmono",
 });
 
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-instrument-serif",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
+
 export const metadata = {
   title: "mzchael.com",
   description: "michael's homepage",
@@ -35,7 +52,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivo.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${archivo.variable} ${inter.variable} ${jetbrainsMono.variable} ${instrumentSerif.variable} ${outfit.variable}`}
       style={{
         scrollbarGutter: "stable",
         // fontFamily: "-apple-system, BlinkMacSystemFont, var(--font-inter)",
