@@ -28,6 +28,12 @@
     background-image: url("/topography-dark.svg");
   }
 
+  @media (pointer: coarse) {
+    .dark body {
+      background-image: none;
+    }
+  }
+
   :root:not(.dark) body {
     background-image: url("/texture.svg");
     background-attachment: fixed;
