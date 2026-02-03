@@ -25,15 +25,15 @@
 
 @layer utilities {
   @media (min-width: 640px) {
-    body {
-      background-image: url("/topography-light.svg");
-      background-attachment: fixed;
-      background-size: 600px 600px;
-      background-position: top left;
-    }
-
     .dark body {
       background-image: url("/topography-dark.svg");
+    }
+
+    :root:not(.dark) body {
+      background-image: url("/texture.svg");
+      background-attachment: fixed;
+      background-size: 5px 5px;
+      background-position: top left;
     }
   }
 

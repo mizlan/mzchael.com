@@ -18,7 +18,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useRef, useState } from "react";
 
-const RAINBOW_BACKGROUND = `
+const _RAINBOW_BACKGROUND = `
   radial-gradient(circle 400px at 10% 20%, hsl(0, 100%, 55%), transparent),
   radial-gradient(circle 350px at 80% 10%, hsl(30, 100%, 55%), transparent),
   radial-gradient(circle 300px at 90% 50%, hsl(60, 100%, 55%), transparent),
@@ -37,7 +37,7 @@ const RAINBOW_BACKGROUND = `
   radial-gradient(circle 370px at 20% 55%, hsl(255, 100%, 55%), transparent)
 `;
 
-const SPOTLIGHT = `radial-gradient(circle 300px at var(--mx, 0px) var(--my, 0px), black, transparent)`;
+const _SPOTLIGHT = `radial-gradient(circle 300px at var(--mx, 0px) var(--my, 0px), black, transparent)`;
 
 export default function BackgroundGlare() {
   const [mounted, setMounted] = useState(false);
@@ -90,44 +90,47 @@ export default function BackgroundGlare() {
 
   if (isFirefox) return null;
 
-  return (
-    <div ref={containerRef} style={{ display: "contents" }}>
-      <div
-        aria-hidden="true"
-        style={{
-          position: "fixed",
-          inset: 0,
-          pointerEvents: "none",
-          zIndex: 0,
-          opacity: 0.04,
-          background: RAINBOW_BACKGROUND,
-          maskImage: SPOTLIGHT,
-          WebkitMaskImage: SPOTLIGHT,
-          maskMode: "alpha",
-        }}
-      />
-      <div
-        aria-hidden="true"
-        style={{
-          position: "fixed",
-          inset: 0,
-          pointerEvents: "none",
-          zIndex: 0,
-          opacity: 0.08,
-          background: RAINBOW_BACKGROUND,
-          maskImage: `${SPOTLIGHT}, url(/topography-mask.svg)`,
-          WebkitMaskImage: `${SPOTLIGHT}, url(/topography-mask.svg)`,
-          maskSize: "100% 100%, 600px 600px",
-          WebkitMaskSize: "100% 100%, 600px 600px",
-          maskRepeat: "no-repeat, repeat",
-          WebkitMaskRepeat: "no-repeat, repeat",
-          maskPosition: "top left, top left",
-          WebkitMaskPosition: "top left, top left",
-          maskComposite: "intersect",
-          WebkitMaskComposite: "source-in",
-          maskMode: "alpha, alpha",
-        }}
-      />
-    </div>
-  );
+  return null;
+
+  // Light-mode glare (disabled)
+  // return (
+  //   <div ref={containerRef} style={{ display: "contents" }}>
+  //     <div
+  //       aria-hidden="true"
+  //       style={{
+  //         position: "fixed",
+  //         inset: 0,
+  //         pointerEvents: "none",
+  //         zIndex: 0,
+  //         opacity: 0.05,
+  //         background: RAINBOW_BACKGROUND,
+  //         maskImage: SPOTLIGHT,
+  //         WebkitMaskImage: SPOTLIGHT,
+  //         maskMode: "alpha",
+  //       }}
+  //     />
+  //     <div
+  //       aria-hidden="true"
+  //       style={{
+  //         position: "fixed",
+  //         inset: 0,
+  //         pointerEvents: "none",
+  //         zIndex: 0,
+  //         opacity: 0.02,
+  //         background: RAINBOW_BACKGROUND,
+  //         maskImage: `${SPOTLIGHT}, url(/topography-mask.svg)`,
+  //         WebkitMaskImage: `${SPOTLIGHT}, url(/topography-mask.svg)`,
+  //         maskSize: "100% 100%, 600px 600px",
+  //         WebkitMaskSize: "100% 100%, 600px 600px",
+  //         maskRepeat: "no-repeat, repeat",
+  //         WebkitMaskRepeat: "no-repeat, repeat",
+  //         maskPosition: "top left, top left",
+  //         WebkitMaskPosition: "top left, top left",
+  //         maskComposite: "intersect",
+  //         WebkitMaskComposite: "source-in",
+  //         maskMode: "alpha, alpha",
+  //       }}
+  //     />
+  //   </div>
+  // );
 }
