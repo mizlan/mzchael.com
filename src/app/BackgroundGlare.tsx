@@ -39,7 +39,7 @@ export default function BackgroundGlare() {
   if (!mounted || resolvedTheme !== "dark") return null;
 
   const glarePosition = isTouchDevice
-    ? "calc(100% + 100px) calc(100% + 100px)"
+    ? "calc(95%) calc(95%)"
     : "var(--mx, 0px) var(--my, 0px)";
 
   return (
