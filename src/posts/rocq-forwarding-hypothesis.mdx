@@ -1,0 +1,58 @@
+export const meta = {
+  title: "Rocq: Concise Tactic Application to Hypotheses",
+  date: "2026-02-02",
+  description:
+    "How to concisely apply an ltac tactic without introducing garbage",
+};
+
+This blog post is a short one I decided to do because I have not
+written a blog post in a long time.
+
+A year ago I asked in the FP Discord:
+
+> Is there a better way to prove an assertion via some short tactic, then use it to specialize some hypothesis, then immediately clear it? A better alternative to:
+
+```coq
+assert (Hge0: (S n > 0)%nat) by lia.
+specialize (IHn Hge0).
+clear Hge0.
+```
+
+Then a good fellow (anonymized) replied:
+
+> It's a long standing issue that  a tactic for doing just that should be added to the stdlib. In the meantime I define it myself whenever I need it.
+
+```coq
+(* Given an assumption H : A -> B, prove A then specialize H with that proof, yielding H : B. *)
+Ltac forward H :=
+  match type of H with
+  | (?A -> ?B) =>
+    let H1 := fresh "H" in
+    assert (H1 : A); [ | specialize (H H1); clear H1]
+  end.
+```
+
+which would be used like
+
+```coq
+forward IHn by lia.
+```
+
+Then another good fellow (anonymized) replied:
+
+```coq
+have {}/IHn IHn: (S n > 0)%nat by lia.
+```
+
+This uses SSReflect. That's super cool, I like SSReflect. But I
+couldn't use it in the project I was working on, so I used `forward`
+(at least for a while).
+
+But later I learned another technique which worked for me, which is to use `ltac:` like so:
+
+```coq
+specialize (IHn ltac:(lia)).
+```
+
+(I lowkey just wrote that so IDK if that exactly works but I have used
+`ltac:` in many instances around my codebase.
