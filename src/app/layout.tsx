@@ -1,6 +1,7 @@
 import "./globals.css";
 import {
   Archivo,
+  Geist_Mono,
   Instrument_Serif,
   Inter,
   JetBrains_Mono,
@@ -37,6 +38,11 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
+
 export const metadata = {
   title: "mzchael.com",
   description: "michael's homepage",
@@ -52,7 +58,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivo.variable} ${inter.variable} ${jetbrainsMono.variable} ${instrumentSerif.variable} ${outfit.variable}`}
+      className={`${archivo.variable} ${inter.variable} ${jetbrainsMono.variable} ${instrumentSerif.variable} ${outfit.variable} ${geistMono.variable}`}
       style={{
         scrollbarGutter: "stable",
         // fontFamily: "-apple-system, BlinkMacSystemFont, var(--font-inter)",

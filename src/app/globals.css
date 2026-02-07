@@ -12,6 +12,7 @@
   --font-jetbrainsmono: var(--font-jetbrainsmono);
   --font-instrument-serif: var(--font-instrument-serif);
   --font-outfit: var(--font-outfit);
+  --font-geist-mono: var(--font-geist-mono);
 }
 
 @utility sig-light {
