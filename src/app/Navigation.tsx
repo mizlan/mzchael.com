@@ -13,7 +13,6 @@ const Navigation = () => {
     >
       <NavigationMenu.List className="flex flex-row items-end justify-end gap-4 text-sm md:gap-7 md:text-base">
         <NavItem href="/">home</NavItem>
-        <NavItem href="/about">about</NavItem>
         <NavItem href="/blog">blog</NavItem>
       </NavigationMenu.List>
 

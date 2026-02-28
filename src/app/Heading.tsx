@@ -9,7 +9,7 @@ const Heading = ({ children, className }: HeadingProps) => {
   return (
     <h1
       className={twMerge(
-        "text-xl font-semibold text-black dark:text-current",
+        "text-xl font-medium text-black dark:text-current",
         className,
       )}
     >
