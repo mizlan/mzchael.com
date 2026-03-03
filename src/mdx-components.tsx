@@ -18,6 +18,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </code>
     ),
+    pre: ({ children }) => (
+      <pre className="my-3 overflow-x-auto rounded-xs bg-slate-200 p-3 font-jetbrainsmono text-sm text-slate-700 [&>code]:bg-transparent [&>code]:p-0">
+        {children}
+      </pre>
+    ),
     li: ({ children }) => (
       <li className="mb-3 list-inside list-disc">{children}</li>
     ),
