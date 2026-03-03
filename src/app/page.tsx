@@ -10,18 +10,17 @@ const Home = async () => {
       <div className="flex flex-col gap-4">
         <Heading className="text-xl">Michael Lan</Heading>
         <p className="text-md">
-          I am a student at UCLA, where I am currently pursuing my
-          bachelor&apos;s in computer science along with a minor in philosophy.
-          Although I&apos;m not actively conducting research at present, I enjoy
-          thinking about functional programming and formal methods. In the past,
-          I&apos;ve contributed to mechanized Rocq proofs of{" "}
+          I am a student at UCLA, where I am pursuing my bachelor&apos;s in
+          computer science along with a minor in philosophy. Although I&apos;m
+          not actively conducting research at present, I enjoy thinking about
+          functional programming and formal methods. In the past, I&apos;ve
+          contributed to mechanized Rocq proofs of certain{" "}
           <Link href="https://doi.org/10.1016/j.laa.2024.03.039">
-            some results
-          </Link>{" "}
-          in quantum computing. My academic background involves coursework in
-          compilers, programming language theory, and type theory. Outside of
-          these academic pursuits, I also enjoy building open source developer
-          tools.
+            quantum computing results
+          </Link>
+          . My academic background involves coursework in compilers, programming
+          language theory, and type theory. Outside of these academic pursuits,
+          I also enjoy building open source developer tools.
         </p>
         <p>
           Moving forward, however, my career path is largely oriented toward
