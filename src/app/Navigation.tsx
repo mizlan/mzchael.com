@@ -8,10 +8,10 @@ const Navigation = () => {
   return (
     <NavigationMenu.Root
       className={
-        "mb-16 mt-1 flex flex-row items-center justify-between gap-12 font-normal uppercase tracking-wide md:mt-5 md:items-center font-geist-mono"
+        "mb-16 mt-1 flex flex-row items-center justify-between gap-12 font-normal uppercase tracking-wide md:mt-5 md:items-center font-archivo"
       }
     >
-      <NavigationMenu.List className="flex flex-row items-end justify-end gap-4 text-sm md:gap-7 md:text-base">
+      <NavigationMenu.List className="flex flex-row items-end justify-end gap-4 text-sm md:gap-7">
         <NavItem href="/">home</NavItem>
         <NavItem href="/blog">blog</NavItem>
       </NavigationMenu.List>
