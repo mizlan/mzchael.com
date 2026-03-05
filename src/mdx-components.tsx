@@ -23,6 +23,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </pre>
     ),
+    blockquote: ({ children }) => (
+      <blockquote className="my-3 border-l-2 border-slate-300 pl-4 text-slate-500">
+        {children}
+      </blockquote>
+    ),
     li: ({ children }) => (
       <li className="mb-3 list-inside list-disc">{children}</li>
     ),
